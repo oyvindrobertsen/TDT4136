@@ -1,6 +1,6 @@
-(ns ex3.astar-test
+(ns astar-test
   (:require [clojure.test :refer :all]
-            [ex3.astar :refer :all]))
+            [astar :refer :all]))
 
 (deftest manhattan-distance-test
   (testing "that manhattan distance calculation works correctly"

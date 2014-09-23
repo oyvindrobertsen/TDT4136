@@ -1,4 +1,4 @@
-(ns ex3.astar)
+(ns astar)
 
 (defn manhattan-distance 
   "Calculates the manhattan distance between two points on a 2D grid"

@@ -1,4 +1,4 @@
-(ns ex3.core
+(ns core
   (:gen-class))
 
 (defn -main

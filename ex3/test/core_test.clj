@@ -1,6 +1,6 @@
-(ns ex3.core-test
+(ns core-test
   (:require [clojure.test :refer :all]
-            [ex3.core :refer :all]))
+            [core :refer :all]))
 
 (deftest a-test
   (testing "Equality"
