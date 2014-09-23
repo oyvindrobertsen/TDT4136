@@ -2,6 +2,6 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Accepts a filename, attempts to parse the file to a search tree and perform A* on it."
   [& args]
-  (println "Hello, World!"))
+  (println args))
