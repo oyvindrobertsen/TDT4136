@@ -1,0 +1,4457 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  19 SEP 2014 15:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**results.tex
+(./results.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+! Undefined control sequence.
+l.5 \section
+            *{1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \section*
+             {1}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
+[] 
+ []
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8         \begin{table}
+                         [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no ] in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 10.
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no W in font nullfont!
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46             \caption
+                          {Wumpus}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: \begin{enumerate} on input line 6 ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47         \end{table}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.48         We can see that $\text
+                                   {KB} \models \alpha_2$ and $\text{KB} \mo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.48 ...at $\text{KB} \models \alpha_2$ and $\text
+                                                  {KB} \models \alpha_3$ sin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.48 ...\alpha_3$ since the single row with $\text
+                                                  {KB} = \text{True}$ has bo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.48 ...nce the single row with $\text{KB} = \text
+                                                  {True}$ has both $\alpha_2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (21.76639pt too wide) in paragraph at lines 8--49
+[]
+ []
+
+
+Overfull \hbox (28.9618pt too wide) in paragraph at lines 8--49
+[] \OMS/cmsy/m/n/10 j[][]
+ []
+
+
+Overfull \hbox (10.88315pt too wide) in paragraph at lines 8--49
+\OML/cmm/m/it/10 []$
+ []
+
+
+Overfull \hbox (28.9618pt too wide) in paragraph at lines 8--49
+[] \OMS/cmsy/m/n/10 j[][]
+ []
+
+
+Overfull \hbox (10.88315pt too wide) in paragraph at lines 8--49
+\OML/cmm/m/it/10 []$
+ []
+
+
+Overfull \hbox (27.85065pt too wide) in paragraph at lines 8--49
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.40286pt too wide) in paragraph at lines 8--49
+[]$
+ []
+
+
+Overfull \hbox (10.88315pt too wide) in paragraph at lines 8--49
+\OML/cmm/m/it/10 []$
+ []
+
+
+Overfull \hbox (10.88315pt too wide) in paragraph at lines 8--49
+\OML/cmm/m/it/10 []$
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53             \item T
+                        rue, False is never true, ergo this statement doesn'...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53             \item T
+                        rue, False is never true, ergo this statement doesn'...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53             \item T
+                        rue, False is never true, ergo this statement doesn'...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54             \item F
+                        alse. Inverse of above, False is never true, and the...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54             \item F
+                        alse. Inverse of above, False is never true, and the...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54             \item F
+                        alse. Inverse of above, False is never true, and the...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55             \item T
+                        rue. $M(\text{LHS}) \subseteq M(\text{HS})$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55             \item T
+                        rue. $M(\text{LHS}) \subseteq M(\text{HS})$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55             \item T
+                        rue. $M(\text{LHS}) \subseteq M(\text{HS})$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.55             \item True. $M(\text
+                                     {LHS}) \subseteq M(\text{HS})$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55 ...tem True. $M(\text{LHS}) \subseteq M(\text
+                                                  {HS})$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56             \item F
+                        alse. With both $A$ and $B$ True, the LHS will be tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56             \item F
+                        alse. With both $A$ and $B$ True, the LHS will be tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56             \item F
+                        alse. With both $A$ and $B$ True, the LHS will be tr...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.56 ..., but the RHS will be false. Thus $M(\text
+                                                  {LHS}) \not\subseteq M(\te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.56 ... Thus $M(\text{LHS}) \not\subseteq M(\text
+                                                  {HS})$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57             \item T
+                        rue. $M(\text{LHS}) = M(\text{HS})$ for this statement.
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57             \item T
+                        rue. $M(\text{LHS}) = M(\text{HS})$ for this statement.
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57             \item T
+                        rue. $M(\text{LHS}) = M(\text{HS})$ for this statement.
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.57             \item True. $M(\text
+                                     {LHS}) = M(\text{HS})$ for this statement.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.57 ...      \item True. $M(\text{LHS}) = M(\text
+                                                  {HS})$ for this statement.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58             \item T
+                        rue. The only case that would make the right hand si...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58             \item T
+                        rue. The only case that would make the right hand si...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58             \item T
+                        rue. The only case that would make the right hand si...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.58 ...he right hand side False is $A = B = \text
+                                                  {True}, C = False$ for whi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61             \item T
+                        rue.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62             \item T
+                        rue. $A = T, B = F$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62             \item T
+                        rue. $A = T, B = F$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62             \item T
+                        rue. $A = T, B = F$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             \item T
+                        rue. $A = B$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             \item T
+                        rue. $A = B$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63             \item T
+                        rue. $A = B$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65         \end
+                 {enumerate}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65         \end
+                 {enumerate}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65         \end
+                 {enumerate}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65         \end{enumerate}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (51.76382pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([]) \OMS/cmsy/m/n/10 ^^R
+ []
+
+
+Overfull \hbox (34.40274pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (8.0868pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 B$
+ []
+
+
+Overfull \hbox (51.76382pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([]) \OMS/cmsy/m/n/10 6^^R
+ []
+
+
+Overfull \hbox (34.40274pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (51.76382pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([]) =
+ []
+
+
+Overfull \hbox (34.40274pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ([])$
+ []
+
+
+Overfull \hbox (18.05553pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (18.64232pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (45.26527pt too wide) in paragraph at lines 52--65
+[]\OML/cmm/m/it/10 ; C \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.62968pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 False$
+ []
+
+
+Overfull \hbox (18.05553pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (29.76382pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 T; B \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 F$
+ []
+
+
+Overfull \hbox (18.05553pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (8.0868pt too wide) in paragraph at lines 52--65
+\OML/cmm/m/it/10 B$
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68             \item $
+                        \{T, F\}, \{TF, FT, TT\}, \{T, F\}$. $2*3*2 = 12$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68             \item $
+                        \{T, F\}, \{TF, FT, TT\}, \{T, F\}$. $2*3*2 = 12$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68             \item $
+                        \{T, F\}, \{TF, FT, TT\}, \{T, F\}$. $2*3*2 = 12$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69             \item O
+                        nly false if all propositions are True, therefore $2...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69             \item O
+                        nly false if all propositions are True, therefore $2...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69             \item O
+                        nly false if all propositions are True, therefore $2...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70             \item $
+                        0$. $A = T, B = F$ means that $A \implies B$ can nev...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70             \item $
+                        0$. $A = T, B = F$ means that $A \implies B$ can nev...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70             \item $
+                        0$. $A = T, B = F$ means that $A \implies B$ can nev...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no . in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.70 ...$0$. $A = T, B = F$ means that $A \implies
+                                                   B$ can never be true.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71         \end{enumerate}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (128.5625pt too wide) in paragraph at lines 67--71
+[]$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 T; F\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; 
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 TF; FT; TT\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10
+ ; \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 T; F\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 3 \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 2 =
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 12$
+ []
+
+
+Overfull \hbox (17.26395pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 2[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 1 =
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 67--71
+\OT1/cmr/m/n/10 15$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 67--71
+[]$\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (18.05553pt too wide) in paragraph at lines 67--71
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (29.76382pt too wide) in paragraph at lines 67--71
+\OML/cmm/m/it/10 T; B \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (7.81946pt too wide) in paragraph at lines 67--71
+\OML/cmm/m/it/10 F$
+ []
+
+
+Overfull \hbox (15.58682pt too wide) in paragraph at lines 67--71
+\OML/cmm/m/it/10 AB$
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75             \item V
+                        alid. $\text{Smoke} \implies \text{Smoke} \equiv \ne...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75             \item V
+                        alid. $\text{Smoke} \implies \text{Smoke} \equiv \ne...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75             \item V
+                        alid. $\text{Smoke} \implies \text{Smoke} \equiv \ne...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.75             \item Valid. $\text
+                                    {Smoke} \implies \text{Smoke} \equiv \ne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 ...       \item Valid. $\text{Smoke} \implies
+                                                   \text{Smoke} \equiv \neg ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 ... \item Valid. $\text{Smoke} \implies \text
+                                                  {Smoke} \equiv \neg \text{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 ...e} \implies \text{Smoke} \equiv \neg \text
+                                                  {Smoke} \vee \text{Smoke}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.75 ...Smoke} \equiv \neg \text{Smoke} \vee \text
+                                                  {Smoke}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76             \item N
+                        either. All models except $\text{Smoke} = \text{True...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76             \item N
+                        either. All models except $\text{Smoke} = \text{True...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76             \item N
+                        either. All models except $\text{Smoke} = \text{True...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.76 ...   \item Neither. All models except $\text
+                                                  {Smoke} = \text{True}, \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76 ...r. All models except $\text{Smoke} = \text
+                                                  {True}, \text{Fire} = \tex...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76 ... except $\text{Smoke} = \text{True}, \text
+                                                  {Fire} = \text{False}$ sat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.76 ...{Smoke} = \text{True}, \text{Fire} = \text
+                                                  {False}$ satisfies the sen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Environment gather* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78                 \begin{gather*}
+                                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( in font nullfont!
+! Undefined control sequence.
+l.79                     (\text
+                               {Smoke} \implies \text{Fire}) \implies (\neg ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.79                     (\text{Smoke} \implies
+                                                \text{Fire}) \implies (\neg ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79 ...              (\text{Smoke} \implies \text
+                                                  {Fire}) \implies (\neg \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+! Undefined control sequence.
+l.79 ...text{Smoke} \implies \text{Fire}) \implies
+                                                   (\neg \text{Smoke} \impli...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ( in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.79 ...moke} \implies \text{Fire}) \implies (\neg
+                                                   \text{Smoke} \implies \ne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.79 ...\implies \text{Fire}) \implies (\neg \text
+                                                  {Smoke} \implies \neg \tex...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79 ...ire}) \implies (\neg \text{Smoke} \implies
+                                                   \neg \text{Fire})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.79 ...ies (\neg \text{Smoke} \implies \neg \text
+                                                  {Fire})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80                     \equiv (\neg \text
+                                           {Smoke} \vee \text{Fire} \implies...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 ...      \equiv (\neg \text{Smoke} \vee \text
+                                                  {Fire} \implies \neg \text...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 ...neg \text{Smoke} \vee \text{Fire} \implies
+                                                   \neg \text{Fire} \vee \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 ...moke} \vee \text{Fire} \implies \neg \text
+                                                  {Fire} \vee \text{Smoke})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.80 ...Fire} \implies \neg \text{Fire} \vee \text
+                                                  {Smoke})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{enumerate} on input line 74 ended by \end{gather*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81                 \end{gather*}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81                 \end{gather*}
+                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.82                 False for $\text
+                                     {Smoke} = \text{False}, \text{Fire} = \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82 ...           False for $\text{Smoke} = \text
+                                                  {False}, \text{Fire} = \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82 ...se for $\text{Smoke} = \text{False}, \text
+                                                  {Fire} = \text{True}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.82 ...Smoke} = \text{False}, \text{Fire} = \text
+                                                  {True}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85             \item V
+                        alid.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86             \item N
+                        either.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87         \end{enumerate}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (71.58109pt too wide) in paragraph at lines 74--87
+[][] \OMS/cmsy/m/n/10 ^^Q
+ []
+
+
+Overfull \hbox (43.84616pt too wide) in paragraph at lines 74--87
+\OMS/cmsy/m/n/10 :[] _
+ []
+
+
+Overfull \hbox (30.51279pt too wide) in paragraph at lines 74--87
+[]$
+ []
+
+
+Overfull \hbox (41.0683pt too wide) in paragraph at lines 74--87
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.113pt too wide) in paragraph at lines 74--87
+[]\OML/cmm/m/it/10 ; [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.62968pt too wide) in paragraph at lines 74--87
+[]$
+ []
+
+
+Overfull \hbox (79.0008pt too wide) in paragraph at lines 74--87
+\OMS/cmsy/m/n/10 :[]:[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^Q
+ []
+
+
+Overfull \hbox (47.73506pt too wide) in paragraph at lines 74--87
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :[] _
+ []
+
+
+Overfull \hbox (54.75381pt too wide) in paragraph at lines 74--87
+[]\OMS/cmsy/m/n/10 :[] _
+ []
+
+
+Overfull \hbox (34.40169pt too wide) in paragraph at lines 74--87
+[]\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (41.0683pt too wide) in paragraph at lines 74--87
+[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (61.33983pt too wide) in paragraph at lines 74--87
+[]\OML/cmm/m/it/10 ; [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.40286pt too wide) in paragraph at lines 74--87
+[]$
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91             \item $
+                        ^5/_8 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91             \item $
+                        ^5/_8 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91             \item $
+                        ^5/_8 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92             \item $
+                        ^3/_4 Q$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95             \item $
+                        2*2^{50} - 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96         \end{enumerate}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (21.87782pt too wide) in paragraph at lines 89--96
+[]$[]\OML/cmm/m/it/10 =[]Q$
+ []
+
+
+Overfull \hbox (21.87782pt too wide) in paragraph at lines 89--96
+[]$[]\OML/cmm/m/it/10 =[]Q$
+ []
+
+
+Overfull \hbox (21.87782pt too wide) in paragraph at lines 89--96
+[]$[]\OML/cmm/m/it/10 =[]Q$
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 89--96
+[]$\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (21.25008pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 2[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 89--96
+[]$\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (21.25008pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 2[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 89--96
+[]$\OT1/cmr/m/n/10 2 \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (21.25008pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 2[] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 1$ 
+ []
+
+! Undefined control sequence.
+l.99 \section
+             *{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 2 in font nullfont!
+! Undefined control sequence.
+l.100 \subsection
+                 *{1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--101
+[] 
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 102--103
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (14.7535pt too wide) in paragraph at lines 102--103
+\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 102--103
+\OML/cmm/m/it/10 C$ 
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 103--104
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (14.7535pt too wide) in paragraph at lines 103--104
+\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 103--104
+\OML/cmm/m/it/10 C$ 
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 104--105
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (14.7535pt too wide) in paragraph at lines 104--105
+\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 104--105
+\OML/cmm/m/it/10 C$ 
+ []
+
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 105--106
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (11.75139pt too wide) in paragraph at lines 105--106
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 106--107
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (21.42018pt too wide) in paragraph at lines 106--107
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (14.52917pt too wide) in paragraph at lines 106--107
+\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 106--107
+\OML/cmm/m/it/10 D$ 
+ []
+
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 107--108
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 107--108
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 107--108
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (19.11253pt too wide) in paragraph at lines 107--108
+\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (25.30908pt too wide) in paragraph at lines 107--108
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 107--108
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (29.19798pt too wide) in paragraph at lines 107--108
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OMS/cms
+y/m/n/10 _
+ []
+
+
+Overfull \hbox (12.44585pt too wide) in paragraph at lines 107--108
+\OML/cmm/m/it/10 D\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (21.42018pt too wide) in paragraph at lines 108--109
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 108--109
+\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 108--109
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 108--109
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )$ 
+ []
+
+! Undefined control sequence.
+l.110 \subsection
+                 *{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 113--114
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 113--114
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 113--114
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 113--114
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 114--115
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.18059pt too wide) in paragraph at lines 114--115
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 114--115
+\OML/cmm/m/it/10 D$ 
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 115--116
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 115--116
+\OML/cmm/m/it/10 D$ 
+ []
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \begin{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.120 (\neg
+            A \vee  \neg C) \wedge  (B \vee  \neg C) \wedge (C \vee  \neg E)...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{align*}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.127 \end{align*}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 118--129
+[]
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.18059pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 D[] 
+ []
+
+
+Overfull \hbox (24.72229pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.18059pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 A[] 
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.6424pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.08476pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (18.41808pt too wide) in paragraph at lines 118--129
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (25.18059pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 A[] 
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (14.7535pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (21.29169pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 D \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 118--129
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (14.625pt too wide) in paragraph at lines 118--129
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 E$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Undefined control sequence.
+l.131 \section
+              *{3}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Undefined control sequence.
+l.132 \subsection
+                 *{1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 131--133
+[] 
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134     \item $
+                 \text{Occupation}(\text{Emily}, \text{Lawyer}) \vee \text{O...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134     \item $
+                 \text{Occupation}(\text{Emily}, \text{Lawyer}) \vee \text{O...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134     \item $
+                 \text{Occupation}(\text{Emily}, \text{Lawyer}) \vee \text{O...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.134     \item $\text
+                      {Occupation}(\text{Emily}, \text{Lawyer}) \vee \text{O...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134     \item $\text{Occupation}(\text
+                                        {Emily}, \text{Lawyer}) \vee \text{O...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 ...em $\text{Occupation}(\text{Emily}, \text
+                                                  {Lawyer}) \vee \text{Occup...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 ...}(\text{Emily}, \text{Lawyer}) \vee \text
+                                                  {Occupation}(\text{Emily},...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 ...ext{Lawyer}) \vee \text{Occupation}(\text
+                                                  {Emily}, \text{Surgeon})$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 ...vee \text{Occupation}(\text{Emily}, \text
+                                                  {Surgeon})$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135     \item $
+                 \text{Occupation}(\text{Joe}, \text{Actor}) \wedge \exists ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135     \item $
+                 \text{Occupation}(\text{Joe}, \text{Actor}) \wedge \exists ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135     \item $
+                 \text{Occupation}(\text{Joe}, \text{Actor}) \wedge \exists ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<recently read> \text 
+                      
+l.135     \item $\text
+                      {Occupation}(\text{Joe}, \text{Actor}) \wedge \exists ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135     \item $\text{Occupation}(\text
+                                        {Joe}, \text{Actor}) \wedge \exists ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 ...item $\text{Occupation}(\text{Joe}, \text
+                                                  {Actor}) \wedge \exists o ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 ...}, \text{Actor}) \wedge \exists o \{\text
+                                                  {Occupation}(\text{Joe}, o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 ...wedge \exists o \{\text{Occupation}(\text
+                                                  {Joe}, o)\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136     \item $
+                 \forall x \{\text{Occupation}(x, Doctor) \wedge \text{Occup...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136     \item $
+                 \forall x \{\text{Occupation}(x, Doctor) \wedge \text{Occup...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136     \item $
+                 \forall x \{\text{Occupation}(x, Doctor) \wedge \text{Occup...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.136     \item $\forall x \{\text
+                                  {Occupation}(x, Doctor) \wedge \text{Occup...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.136 ...\text{Occupation}(x, Doctor) \wedge \text
+                                                  {Occupation}(x, Surgeon)\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (132.2498pt too wide) in paragraph at lines 133--137
+[]$[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10
+ _
+ []
+
+
+Overfull \hbox (129.21274pt too wide) in paragraph at lines 133--137
+[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (110.48283pt too wide) in paragraph at lines 133--137
+[]$[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10
+ ^
+ []
+
+
+Overfull \hbox (103.99092pt too wide) in paragraph at lines 133--137
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 o\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 ([]\OML
+/cmm/m/it/10 ; o\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (122.36269pt too wide) in paragraph at lines 133--137
+[]$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x; Doctor\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (111.30228pt too wide) in paragraph at lines 133--137
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; Surgeon\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10
+ g$ 
+ []
+
+! Undefined control sequence.
+l.139 \subsection
+                 *{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 2 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 139--140
+[] 
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists y \{ x ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists y \{ x ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists y \{ x ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.141     \item $\forall x \{ \text
+                                   {Even}(x) \Leftrightarrow \exists y \{ x ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142     \item $
+                 \forall x \{ \text{Prime}(x) \Leftrightarrow \forall yz \{ ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142     \item $
+                 \forall x \{ \text{Prime}(x) \Leftrightarrow \forall yz \{ ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142     \item $
+                 \forall x \{ \text{Prime}(x) \Leftrightarrow \forall yz \{ ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.142     \item $\forall x \{ \text
+                                   {Prime}(x) \Leftrightarrow \forall yz \{ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.142 ...row \forall yz \{ x = y \times z \implies
+                                                   z = 1 \vee y = 1\}\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists yz \{ x...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists yz \{ x...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143     \item $
+                 \forall x \{ \text{Even}(x) \Leftrightarrow \exists yz \{ x...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.143     \item $\forall x \{ \text
+                                   {Even}(x) \Leftrightarrow \exists yz \{ x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.143 ...row \exists yz \{ x = y + z \wedge (\text
+                                                  {Prime}(y) \wedge \text{Pr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.143 ... + z \wedge (\text{Prime}(y) \wedge \text
+                                                  {Prime}(z))\}\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (66.3646pt too wide) in paragraph at lines 140--144
+[]$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ,
+ []
+
+
+Overfull \hbox (32.08797pt too wide) in paragraph at lines 140--144
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 y\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/c
+mr/m/n/10 =
+ []
+
+
+Overfull \hbox (13.0394pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (15.26163pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 y\OMS/cmsy/m/n/10 gg$
+ []
+
+
+Overfull \hbox (72.02159pt too wide) in paragraph at lines 140--144
+[]$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ,
+ []
+
+
+Overfull \hbox (37.17827pt too wide) in paragraph at lines 140--144
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 yz\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (13.0394pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (20.73611pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 zz \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 140--144
+\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 _
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 140--144
+\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 gg$
+ []
+
+
+Overfull \hbox (66.3646pt too wide) in paragraph at lines 140--144
+[]$\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ,
+ []
+
+
+Overfull \hbox (37.17827pt too wide) in paragraph at lines 140--144
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 yz\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/
+cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (13.0394pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (11.75699pt too wide) in paragraph at lines 140--144
+\OML/cmm/m/it/10 z \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (53.07492pt too wide) in paragraph at lines 140--144
+\OT1/cmr/m/n/10 ([](\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (56.23697pt too wide) in paragraph at lines 140--144
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 ))\OMS/cmsy/m/n/10 gg$ 
+ []
+
+! Undefined control sequence.
+l.146 \subsection
+                 *{3}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 3 in font nullfont!
+
+! LaTeX Error: Environment gather* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \begin{gather*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148     \forall
+                  k \{ \text{Key}(k) \implies \exists t_0 \{\text{Before}(\t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.148     \forall k \{ \text
+                            {Key}(k) \implies \exists t_0 \{\text{Before}(\t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148     \forall k \{ \text{Key}(k) \implies
+                                              \exists t_0 \{\text{Before}(\t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 ...text{Key}(k) \implies \exists t_0 \{\text
+                                                  {Before}(\text{Now}, t_0) ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 ...implies \exists t_0 \{\text{Before}(\text
+                                                  {Now}, t_0) \wedge \forall...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 ...text{Now}, t_0) \wedge \forall t \{ \text
+                                                  {Before}(t_0, t) \implies ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 ...orall t \{ \text{Before}(t_0, t) \implies
+                                                   \text{Lost}(k, t)\} \} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.148 ...t \{ \text{Before}(t_0, t) \implies \text
+                                                  {Lost}(k, t)\} \} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149     \forall xy \{ \text
+                             {Sock}(x) \wedge \text{Sock}(y) \wedge \text{Pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149 ...\forall xy \{ \text{Sock}(x) \wedge \text
+                                                  {Sock}(y) \wedge \text{Pai...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149 ...ck}(x) \wedge \text{Sock}(y) \wedge \text
+                                                  {Pair}(x, y) \implies \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149 ...ock}(y) \wedge \text{Pair}(x, y) \implies
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150     \exists t_1 \{ \text
+                              {Before}(Now, t_1) \wedge \forall t \{ \text{B...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150 ...fore}(Now, t_1) \wedge \forall t \{ \text
+                                                  {Before}(t_1, t) \wedge \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150 ...l t \{ \text{Before}(t_1, t) \wedge \text
+                                                  {Lost}(x, t)\} \} \vee \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151     \exists t_2 \{ \text
+                              {Before}(Now, t_2) \wedge \forall t \{ \text{B...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151 ...fore}(Now, t_2) \wedge \forall t \{ \text
+                                                  {Before}(t_2, t) \wedge \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151 ...l t \{ \text{Before}(t_2, t) \wedge \text
+                                                  {Lost}(y, t)\} \} \}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{gather*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{gather*}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 \end{gather*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 146--153
+[]
+ []
+
+
+Overfull \hbox (148.54889pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 k\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 k\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 t[]\OMS/cmsy/m/
+n/10 f[]\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 ; t[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/
+n/10 ^
+ []
+
+
+Overfull \hbox (122.41109pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 t[]; t\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 k; t\OT1/cmr/m/n/10 )\OMS
+/cmsy/m/n/10 gg[] 
+ []
+
+
+Overfull \hbox (63.09616pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 xy\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (41.11003pt too wide) in paragraph at lines 146--153
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (44.5285pt too wide) in paragraph at lines 146--153
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Overfull \hbox (100.04762pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 t[]\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 Now; t[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (77.77216pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 t[]; t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (58.16673pt too wide) in paragraph at lines 146--153
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 gg _
+ []
+
+
+Overfull \hbox (100.04762pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 t[]\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 Now; t[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (77.77216pt too wide) in paragraph at lines 146--153
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 t[]; t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (56.04639pt too wide) in paragraph at lines 146--153
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y; t\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ggg$ 
+
+ []
+
+! Undefined control sequence.
+l.154 \subsection
+                 *{4}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 4 in font nullfont!
+
+! LaTeX Error: Environment gather* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \begin{gather*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156     \forall
+                  xy \{ \text{Person}(x) \wedge \text{IsDNAOfPerson}(y, x) \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.156     \forall xy \{ \text
+                             {Person}(x) \wedge \text{IsDNAOfPerson}(y, x) \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.156 ...orall xy \{ \text{Person}(x) \wedge \text
+                                                  {IsDNAOfPerson}(y, x) \imp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.156 ...wedge \text{IsDNAOfPerson}(y, x) \implies
+                                                   \neg \exists z \{ \text{P...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.156 ...n}(y, x) \implies \neg \exists z \{ \text
+                                                  {Person}(z) \wedge \text{I...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.156 ...exists z \{ \text{Person}(z) \wedge \text
+                                                  {IsDNAOfPerson}(y, z) \} \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157     \forall a \{ \text
+                            {Person}(a) \wedge \text{IsParentOf}(x, a) \impl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157 ...forall a \{ \text{Person}(a) \wedge \text
+                                                  {IsParentOf}(x, a) \implie...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157 ...) \wedge \text{IsParentOf}(x, a) \implies
+                                                   \text{IsDerivedFromPerson...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157 ...ge \text{IsParentOf}(x, a) \implies \text
+                                                  {IsDerivedFromPersonsDNA}(...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{gather*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{gather*}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.158 \end{gather*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 154--159
+[]
+ []
+
+
+Overfull \hbox (74.48396pt too wide) in paragraph at lines 154--159
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 xy\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (179.55772pt too wide) in paragraph at lines 154--159
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y; x\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 :9\OM
+L/cmm/m/it/10 z\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z\OT1/cmr/
+m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (115.96034pt too wide) in paragraph at lines 154--159
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y; z\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g ^
+ []
+
+
+Overfull \hbox (68.3636pt too wide) in paragraph at lines 154--159
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 a\OMS/cmsy/m/n/10 f[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 a\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^
+ []
+
+
+Overfull \hbox (247.17323pt too wide) in paragraph at lines 154--159
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; a\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 y;
+ a\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 gg$ 
+ []
+
+! Undefined control sequence.
+l.161 \section
+              *{4}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+l.162 \subsection
+                 *{1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 161--163
+[] 
+ []
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ] in font nullfont!
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item $
+                 \Theta = \{x/\text{Rocky}\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item $
+                 \Theta = \{x/\text{Rocky}\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     \item $
+                 \Theta = \{x/\text{Rocky}\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.164     \item $\Theta = \{x/\text
+                                   {Rocky}\}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165     \item $
+                 \Theta = \{x/\text{Leo, Rocky}, y/$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165     \item $
+                 \Theta = \{x/\text{Leo, Rocky}, y/$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165     \item $
+                 \Theta = \{x/\text{Leo, Rocky}, y/$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.165     \item $\Theta = \{x/\text
+                                   {Leo, Rocky}, y/$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \end{enumerate}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (18.33331pt too wide) in paragraph at lines 163--166
+[]$\OT1/cmr/m/n/10 ^^B =
+ []
+
+
+Overfull \hbox (48.3427pt too wide) in paragraph at lines 163--166
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x=[]\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (18.33331pt too wide) in paragraph at lines 163--166
+[]$\OT1/cmr/m/n/10 ^^B =
+ []
+
+
+Overfull \hbox (78.80219pt too wide) in paragraph at lines 163--166
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x=[]; y=$ 
+ []
+
+)
+! Emergency stop.
+<*> results.tex
+               
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 22 strings out of 493488
+ 272 string characters out of 3141326
+ 73432 words of memory out of 3000000
+ 3427 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 19i,7n,12p,192b,161s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
