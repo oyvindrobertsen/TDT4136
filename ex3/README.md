@@ -8,19 +8,26 @@ An A\* implementation in Clojure
 
 ## Installation
 
-Clone the repository, do `lein run`.
+1. Ensure dependencies are met
+2. Clone the repository
+3. Run `lein test`
+
+Each exercise is implemented as a test. TODO: Implement this in 
+`integration_test.clj`?
 
 ## Usage
 
-FIXME: explanation
+TODO: Implement
 
-    $ java -jar ex3-0.1.0-standalone.jar [args]
+    $ java -jar ex3-0.1.0-standalone.jar [path-to-maze-file] [bin|cost]
 
 ## Options
 
 FIXME: listing of options this app accepts.
 
-## Examples
+## Development
+
+All code should pass [Eastwood](https://github.com/jonase/eastwood) linting.
 
 
 ### Bugs
