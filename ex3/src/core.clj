@@ -7,4 +7,4 @@
 (defn -main
   "Accepts a filename, attempts to parse the file to a search tree and perform A* on it."
   [& args]
-  (graphics/draw-grid (parse/bin-parse "resources/test-board.txt")))
+  (graphics/draw-grid (parse/bin-parse "resources/board-1-1.txt")))
