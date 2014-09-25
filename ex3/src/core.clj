@@ -1,4 +1,5 @@
 (ns core
+  (require [graphics])
   (:gen-class))
 
 (defn -main
