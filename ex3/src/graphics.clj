@@ -1,25 +1,32 @@
 (ns graphics
+  (require [parse])
   (:require [quil.core :as q]))
 
-(defn setup []
+(defn draw-tile[b x y]
+  (case b
+    0 (q/fill 0 0 0)
+    (q/fill 255 255 255)
+    )
+
+  (q/rect x y 20 20))
+
+(defn draw [grid]
   (q/smooth)
-  (q/frame-rate 10)
-  (q/background 0))
+  (q/background 0)
 
-(defn r[]
-  (q/random 255))
+  (println grid)
 
-(defn draw[]
-  (q/stroke-weight 0)
-  (q/fill (r) (r) (r))
+  (draw-tile 1 0 0)
+  (draw-tile 1 20 20)
+)
 
-  (let [side 20
-        x    (q/random (q/width))
-        y    (q/random (q/height))]
-    (q/rect x y side side)))
-
-(q/defsketch example
-  :title "Hello quil"
-  :setup setup
-  :draw draw
-  :size [400 400])
+(defn draw-grid[grid]
+  (let [d (parse/dimensions grid)
+        x (first d)
+        y (second d)
+        h (* 20 x)
+        w (* 20 y)]
+    (q/sketch
+      :title "grid"
+      :setup (partial draw grid)
+      :size [h w])))
