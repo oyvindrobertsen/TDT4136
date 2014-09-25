@@ -47,5 +47,5 @@
   [board]
   (let [data (.data board)
         y (count data)
-        x (count (get data 0))]
+        x (count (first data))]
         [x y]))

@@ -4,7 +4,14 @@
 
 (deftest bin-parse-text-file-from-resources-test
   (testing "that bin-parse can read and properly parse from resources"
-    (is (= 1 (bin-parse "resources/test-board.txt")))))
+    (is (= #parse.Board{
+                        :start [3 1],
+                        :end [1 2],
+                        :data ((1 1 1 1 1 1 1)
+                               (1 0 0 0 0 0 1)
+                               (1 0 0 0 0 0 1)
+                               (1 1 1 1 1 1 1))}
+           (bin-parse "resources/test-board.txt")))))
 
 (deftest bin-trans-dot-test
   (testing "that bin-trans can translate . to 0"
@@ -36,4 +43,6 @@
   (testing "the reported dimensions of a board"
     (is (= [3 3] (dimensions (->Board [0 0] [0 0] [[0 0 0]
                                                    [1 1 1]
-                                                   [0 0 0]]))))))
+                                                   [0 0 0]]))))
+    (is (= [7 4] (dimensions (bin-parse "resources/test-board.txt"))))
+    ))
