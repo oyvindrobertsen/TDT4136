@@ -13,9 +13,6 @@
 (defn draw [grid]
   (q/smooth)
   (q/background 0)
-
-  (println grid)
-
   (draw-tile 1 0 0)
   (draw-tile 1 20 20)
 )
