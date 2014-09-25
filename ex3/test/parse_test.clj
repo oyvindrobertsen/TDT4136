@@ -31,3 +31,9 @@
                                 "#A#"
                                 "###"
                                 ] \A)))))
+
+(deftest dimensions-test
+  (testing "the reported dimensions of a board"
+    (is (= [3 3] (dimensions (->Board [0 0] [0 0] [[0 0 0]
+                                                   [1 1 1]
+                                                   [0 0 0]]))))))

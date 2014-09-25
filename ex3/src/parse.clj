@@ -42,4 +42,10 @@
                                                 (fn [string] (map bin-trans string))
                                                 grid))))
 
-
+(defn dimensions
+  "Given a Board record, returns a [width height] vector"
+  [board]
+  (let [data (.data board)
+        y (count data)
+        x (count (get data 0))]
+        [x y]))
