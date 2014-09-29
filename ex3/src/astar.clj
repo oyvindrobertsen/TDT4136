@@ -1,4 +1,6 @@
-(ns astar)
+(ns astar
+  (:require [parse :refer :all]))
+(use '[clojure.data.priority-map])
 
 (defn manhattan-distance 
   "Calculates the manhattan distance between two points on a 2D grid"
@@ -32,6 +34,27 @@
     [tx ty]))
 
 (defn search
-  ""
-  ([x] 1)
+  "Performs the actual search recursively. Has two overloads based on arity.
+  The first one is used as the entrypoint to the recursive function. The first
+  overload initializes the various data structures needed in the subsequent
+  recursive calls."
+  ([board]
+   (let [open (priority-map-by
+                (fn [x y]
+                  (if (= x y)
+                    0
+                    (let [[f1 _ h1] x
+                          [f2 _ h2] y]
+                      (if (= f1 f2)
+                        (if (< h1 h2) -1 1)
+                        (if (< f1 f2) -1 1)))))
+                (.start board) (cost (.start board) (.start board) (.end board)))
+         closed {}
+         [width height] (dimensions board)
+         [sx sy] (.start board)
+         [ex ey] (.end board)]
+     ; Verify that start and end coordinates are not unreachable.
+     (when (and (not= (nth (nth (.data board) sy) sx) 1)
+                (not= (nth (nth (.data board) ey) ex) 1))
+       (search board width height open closed))))
   ([x y] 2))
