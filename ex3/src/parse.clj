@@ -38,9 +38,9 @@
   board."
   [path]
   (let [grid (get-lines path)]
-    (Board. (find-start grid) (find-end grid) (map 
-                                                (fn [string] (map bin-trans string))
-                                                grid))))
+    (Board. 
+      (find-start grid) (find-end grid) 
+      (into [] (map (fn [string] (into [] (map bin-trans string))) grid)))))
 
 (defn dimensions
   "Given a Board record, returns a [width height] vector"

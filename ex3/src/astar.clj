@@ -17,7 +17,7 @@
 
 (defn edges
   "Returns a list of all , non-closed nodes adjacent to the x, y pair
-  passed"
+  passed. Adjacent meaning the four cardinal directions."
   [grid width height closed [x y]]
   (for [tx (range (- x 1) (+ x 2))
         ty (range (- y 1) (+ y 2))
@@ -25,6 +25,7 @@
                    (>= ty 0)
                    (<= tx width)
                    (<= tx height)
+                   (== (manhattan-distance [x y] [tx ty]) 1)
                    (not= [x y] [tx ty])
                    (not= (nth (nth grid ty) tx) 1)
                    (not (contains? closed [tx ty])))]
@@ -32,5 +33,5 @@
 
 (defn search
   ""
-  []
-  '_)
+  ([x] 1)
+  ([x y] 2))
