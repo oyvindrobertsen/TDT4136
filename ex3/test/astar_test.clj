@@ -1,6 +1,7 @@
 (ns astar-test
   (:require [clojure.test :refer :all]
-            [astar :refer :all]))
+            [astar :refer :all]
+            [parse :refer :all]))
 
 (deftest manhattan-distance-test
   (testing "that manhattan distance calculation works correctly"
@@ -27,3 +28,17 @@
     (is (= () (edges [[0 0 1]
                       [1 0 1]
                       [1 1 1]] 3 3 (hash-map [1 0] [0 0]) [1 1])))))
+
+(deftest backtracing-path-test
+  (testing "that the path backtracing function works correctly."
+    (is (= [[0 0] [1 0] [1 1]] (path [1 1] [1 0] (hash-map [1 0] [0 0]))))))
+
+(deftest bin-search-test
+  (testing "that the search function correctly finds the shortest path."
+    (is (= [[0 0] [1 0] [1 1]] (search #parse.Board{
+                                                    :start [0 0]
+                                                    :end [1 1]
+                                                    :data [[0 0 1]
+                                                           [1 0 1]
+                                                           [1 1 1]]
+                                                    })))))
