@@ -5,7 +5,7 @@
 (defn manhattan-distance
   "Calculates the manhattan distance between two points on a 2D grid"
   [[x1 y1] [x2 y2]]
-  (+ (Math/abs (- x2 x1)) (Math/abs (- y2 y1))))
+  (+ (Math/abs ^Integer (- x2 x1)) (Math/abs ^Integer (- y2 y1))))
 
 
 (defn cost
@@ -18,22 +18,21 @@
     [f g h]))
 
 (defn edges
-  "Returns a list of all , non-closed nodes adjacent to the x, y pair
+  "Returns a list of all non-visited nodes adjacent to the x, y pair
   passed. Adjacent meaning the four cardinal directions."
   [grid width height closed [x y]]
   (for [tx (range (- x 1) (+ x 2))
         ty (range (- y 1) (+ y 2))
         :when (and (>= tx 0)
                    (>= ty 0)
-                   (<= tx width)
-                   (<= tx height)
+                   (< tx width)
+                   (< ty height)
                    (== (manhattan-distance [x y] [tx ty]) 1)
-                   (not= [x y] [tx ty])
                    (not= (nth (nth grid ty) tx) -1)
                    (not (contains? closed [tx ty])))]
     [tx ty]))
 
-(defn path 
+(defn path
   "Backtraces through parents in the closed map until it has built a path from
   start to end."
   [end parent closed]
@@ -57,8 +56,8 @@
                     (let [[f1 _ h1] x
                           [f2 _ h2] y]
                       (if (= f1 f2)
-                        (if (< h1 h2) -1 1)
-                        (if (< f1 f2) -1 1)))))
+                        (if (<= h1 h2) -1 1)
+                        (if (<= f1 f2) -1 1)))))
                 (.start board) (cost (.start board) (.start board) (.end board)))
          closed {}
          [width height] (dimensions board)
@@ -68,9 +67,9 @@
      (when (and (not= (nth (nth (.costs board) sy) sx) 1)
                 (not= (nth (nth (.costs board) ey) ex) 1))
        (search board width height open closed))))
-  ([board width height open closed] 
+  ([board width height open closed]
    (if-let [[coord [_ _ _ parent]] (peek open)]
-     (if (not (= coord (.end board)))
+     (if-not (= coord (.end board))
        (let [closed (assoc closed coord parent)
              edges (edges (.costs board) width height closed coord)
              open (reduce

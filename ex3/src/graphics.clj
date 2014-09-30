@@ -39,14 +39,12 @@
               (draw-tile c (* 20 x) (* 20 y))
               (if (some #{[x y]} path) (draw-dot (+ 10 (* 20 x)) (+ 10 (* 20 y)))))))))
 
-(defn draw-grid[grid]
+(defn draw-grid [grid path]
   (let [d (parse/dimensions grid)
         x (first d)
         y (second d)
         h (* 20 x)
-        w (* 20 y)
-        path [[0 0] [1 1]]
-        ]
+        w (* 20 y)]
     (q/sketch
       :title "grid"
       :setup (partial draw grid path)

@@ -43,7 +43,7 @@
   board."
   [path]
   (let [grid (get-lines path)]
-    (Board. 
+    (Board.
       (find-start grid) (find-end grid) 
       (into [] (map (fn [string] (into [] (map int-trans string))) grid)))))
 
