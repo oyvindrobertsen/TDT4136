@@ -1,18 +1,23 @@
 (ns parse
   (:require [clojure.string :refer :all]))
 
-(defrecord Board [start end data])
+(defrecord Board [start end costs])
 
 (defn get-lines
   "Returns a vector of lines in text file at path."
   [path]
   (split-lines (slurp path)))
 
-(defn bin-trans
-  "Mapping function, input format -> binary representation"
+(defn int-trans
+  "Mapping function, input-format -> integer representation"
   [chr]
   (case chr
-    \# 1
+    \# -1
+    \w 100
+    \m 50
+    \f 10
+    \g 5
+    \r 1
     0))
 
 (defn find-character
@@ -32,7 +37,7 @@
   [grid]
   (find-character grid \B))
 
-(defn bin-parse
+(defn parse-board
   "Slurps the given file and parses it to a board object with info of start/end
   coordinates and the board represented as a 2D vector. Assumes a non-weighted
   board."
@@ -40,12 +45,12 @@
   (let [grid (get-lines path)]
     (Board. 
       (find-start grid) (find-end grid) 
-      (into [] (map (fn [string] (into [] (map bin-trans string))) grid)))))
+      (into [] (map (fn [string] (into [] (map int-trans string))) grid)))))
 
 (defn dimensions
   "Given a Board record, returns a [width height] vector"
   [board]
-  (let [data (.data board)
-        y (count data)
-        x (count (first data))]
+  (let [costs (.costs board)
+        y (count costs)
+        x (count (first costs))]
         [x y]))

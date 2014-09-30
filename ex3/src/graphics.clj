@@ -4,11 +4,16 @@
 
 (defn draw-tile[b x y]
   (case b
-    1  (q/fill 0 0 0)
     \r (q/fill 255 0 0)
     \g (q/fill 0 255 0)
     \b (q/fill 0 0 255)
-    (q/fill 255 255 255))
+    0  (q/fill 255 255 255)
+    1  (q/fill 191 127 63)
+    5  (q/fill 127 255 127)
+    10 (q/fill 0 127 0)
+    50 (q/fill 165 165 165)
+    100 (q/fill 76 76 255)
+    (q/fill 0 0 0))
 
   (q/rect x y 20 20))
 
@@ -25,7 +30,7 @@
 
   (let [s (.start grid)
         e (.end grid)]
-    (doseq [row (map-indexed enumerate (.data grid))]
+    (doseq [row (map-indexed enumerate (.costs grid))]
       (doseq [tile (map-indexed enumerate (second row))]
         (let [y (first row)
               x (first tile)

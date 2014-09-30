@@ -2,32 +2,27 @@
   (:require [clojure.test :refer :all]
             [parse :refer :all]))
 
-(deftest bin-parse-text-file-from-resources-test
-  (testing "that bin-parse can read and properly parse from resources"
+(deftest parse-text-file-from-resources-test
+  (testing "that parse-board can read and properly parse from resources"
     (is (= #parse.Board{
                         :start [3 1],
                         :end [1 2],
-                        :data ((1 1 1 1 1 1 1)
-                               (1 0 0 0 0 0 1)
-                               (1 0 0 0 0 0 1)
-                               (1 1 1 1 1 1 1))}
-           (bin-parse "resources/test-board.txt")))))
+                        :costs ((-1 -1 -1 -1 -1 -1 -1)
+                                (-1  0  0  0  0  0 -1)
+                                (-1  0  0  0  0  0 -1)
+                                (-1 -1 -1 -1 -1 -1 -1))}
+           (parse-board "resources/test-board.txt")))))
 
-(deftest bin-trans-dot-test
-  (testing "that bin-trans can translate . to 0"
-    (is (= 0 (bin-trans \.)))))
-
-(deftest bin-trans-wall-test
-  (testing "that bin-trans can translate # to 1"
-    (is (= 1 (bin-trans \#)))))
-
-(deftest bin-trans-start-test
-  (testing "that bin-trans correctly translates start character as 0"
-    (is (= 0 (bin-trans \A)))))
-
-(deftest bin-trans-end-test
-  (testing "that bin-trans correctly translates end character as 0"
-    (is (= 0 (bin-trans \B)))))
+(deftest int-trans-test
+  (testing ""
+    (is (= 100 (int-trans \w)))
+    (is (=  50 (int-trans \m)))
+    (is (=  10 (int-trans \f)))
+    (is (=   5 (int-trans \g)))
+    (is (=   1 (int-trans \r)))
+    (is (=   0 (int-trans \A)))
+    (is (=   0 (int-trans \B)))
+    ))
 
 
 (deftest find-character-test
@@ -44,5 +39,5 @@
     (is (= [3 3] (dimensions (->Board [0 0] [0 0] [[0 0 0]
                                                    [1 1 1]
                                                    [0 0 0]]))))
-    (is (= [7 4] (dimensions (bin-parse "resources/test-board.txt"))))
+    (is (= [7 4] (dimensions (parse-board "resources/test-board.txt"))))
     ))

@@ -2,7 +2,6 @@
   (:require [clojure.test :refer :all]
             [astar :refer :all]
             [parse :refer :all]))
-
 (deftest manhattan-distance-test
   (testing "that manhattan distance calculation works correctly"
     (is (= 4 (manhattan-distance [0 0] [2 2])))))
@@ -18,16 +17,16 @@
 
 (deftest detect-valid-adjacent-nodes-test
   (testing "that the edges function works correctly for valid input"
-    (is (= [[1 0]] (edges [[0 0 1]
-                           [1 0 1]
-                           [1 1 1]] 3 3 {} [1 1])))))
+    (is (= [[1 0]] (edges [[ 0  0 -1]
+                           [-1  0 -1]
+                           [-1 -1 -1]] 3 3 {} [1 1])))))
 
 (deftest edges-doesnt-add-nodes-in-closed-map-test
   (testing "that the edges function does not return nodes that are present in
            the closed map."
-    (is (= () (edges [[0 0 1]
-                      [1 0 1]
-                      [1 1 1]] 3 3 (hash-map [1 0] [0 0]) [1 1])))))
+    (is (= () (edges [[ 0  0 -1]
+                      [-1  0 -1]
+                      [-1 -1 -1]] 3 3 (hash-map [1 0] [0 0]) [1 1])))))
 
 (deftest backtracing-path-test
   (testing "that the path backtracing function works correctly."
@@ -38,7 +37,7 @@
     (is (= [[0 0] [1 0] [1 1]] (search #parse.Board{
                                                     :start [0 0]
                                                     :end [1 1]
-                                                    :data [[0 0 1]
-                                                           [1 0 1]
-                                                           [1 1 1]]
+                                                    :costs [[ 0  0 -1]
+                                                            [-1  0 -1]
+                                                            [-1 -1 -1]]
                                                     })))))

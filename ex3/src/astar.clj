@@ -29,7 +29,7 @@
                    (<= tx height)
                    (== (manhattan-distance [x y] [tx ty]) 1)
                    (not= [x y] [tx ty])
-                   (not= (nth (nth grid ty) tx) 1)
+                   (not= (nth (nth grid ty) tx) -1)
                    (not (contains? closed [tx ty])))]
     [tx ty]))
 
@@ -65,14 +65,14 @@
          [sx sy] (.start board)
          [ex ey] (.end board)]
      ; Verify that start and end coordinates are not unreachable.
-     (when (and (not= (nth (nth (.data board) sy) sx) 1)
-                (not= (nth (nth (.data board) ey) ex) 1))
+     (when (and (not= (nth (nth (.costs board) sy) sx) 1)
+                (not= (nth (nth (.costs board) ey) ex) 1))
        (search board width height open closed))))
   ([board width height open closed] 
    (if-let [[coord [_ _ _ parent]] (peek open)]
      (if (not (= coord (.end board)))
        (let [closed (assoc closed coord parent)
-             edges (edges (.data board) width height closed coord)
+             edges (edges (.costs board) width height closed coord)
              open (reduce
                     (fn [open edge]
                       (if (not (contains? open edge))
