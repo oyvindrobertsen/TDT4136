@@ -7,10 +7,10 @@
     (is (= #parse.Board{
                         :start [3 1],
                         :end [1 2],
-                        :costs ((-1 -1 -1 -1 -1 -1 -1)
-                                (-1  0  0  0  0  0 -1)
-                                (-1  0  0  0  0  0 -1)
-                                (-1 -1 -1 -1 -1 -1 -1))}
+                        :weights ((-1 -1 -1 -1 -1 -1 -1)
+                                  (-1  0  0  0  0  0 -1)
+                                  (-1  0  0  0  0  0 -1)
+                                  (-1 -1 -1 -1 -1 -1 -1))}
            (parse-board "resources/test-board.txt")))))
 
 (deftest int-trans-test

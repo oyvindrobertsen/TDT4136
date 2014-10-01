@@ -30,7 +30,7 @@
 
   (let [s (.start grid)
         e (.end grid)]
-    (doseq [row (map-indexed enumerate (.costs grid))]
+    (doseq [row (map-indexed enumerate (.weights grid))]
       (doseq [tile (map-indexed enumerate (second row))]
         (let [y (first row)
               x (first tile)

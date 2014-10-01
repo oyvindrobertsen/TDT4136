@@ -14,7 +14,14 @@
 (deftest cost-estimate-test
   (testing "that the cost estimate function correctly calculates the estimate
            for the given state."
-    (is (= [4 2 2] (cost [1 1] [0 0] [2 2])))))
+    (let [board #parse.Board{
+                             :start [0 0]
+                             :end [1 1]
+                             :weights [[ 0  0 -1]
+                                       [-1  0 -1]
+                                       [-1 -1 -1]]
+                             }]
+      (is (= [2 2 0] (cost board [1 1]))))))
 
 (deftest detect-valid-adjacent-nodes-naive-test
   (testing "that the edges function correctly returns all possible moves"
@@ -44,9 +51,9 @@
     (is (= [[0 0] [1 0] [1 1]] (search #parse.Board{
                                                     :start [0 0]
                                                     :end [1 1]
-                                                    :costs [[ 0  0 -1]
-                                                            [-1  0 -1]
-                                                            [-1 -1 -1]]
+                                                    :weights [[ 0  0 -1]
+                                                              [-1  0 -1]
+                                                              [-1 -1 -1]]
                                                     })))))
 
 (deftest bin-search-parse-test
