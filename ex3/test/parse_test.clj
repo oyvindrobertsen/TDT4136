@@ -17,11 +17,11 @@
   (testing "that parse-board can read and properly parse weighted boards from 
            resources"
     (is (= #parse.Board{
-                        :start [0 0]
-                        :end [3 1]
-                        :weigths [[ 0  5 10  5]
-                                  [10  5 50  0]
-                                  [50  1 50 50]]}
+                        :start [0 0],
+                        :end [3 1],
+                        :weights [[0 5 10 5] 
+                                  [10 5 50 0]
+                                  [50 1 50 50]]} 
            (parse-board "resources/weighted-test-board.txt")))))
 
 (deftest int-trans-test
