@@ -1,7 +1,7 @@
 (ns parse
   (:require [clojure.string :refer :all]))
 
-(defrecord Board [start end costs])
+(defrecord Board [start end weights])
 
 (defn get-lines
   "Returns a vector of lines in text file at path."
@@ -50,7 +50,14 @@
 (defn dimensions
   "Given a Board record, returns a [width height] vector"
   [board]
-  (let [costs (.costs board)
-        y (count costs)
-        x (count (first costs))]
+  (let [weights (.weights board)
+        y (count weights)
+        x (count (first weights))]
         [x y]))
+
+(defn get-weight
+  ([board x y]
+   (get (get (.weights board) y) x))
+  ([board c]
+   (get-weight (first c) (second c))))
+

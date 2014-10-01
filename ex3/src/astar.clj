@@ -11,9 +11,9 @@
 (defn cost
  "Calculates the total estimated cost of a solution path from start through
  curr to end."
- [curr start end]
-  (let [g (manhattan-distance start curr)
-        h (manhattan-distance curr end)
+ [board curr]
+  (let [g (manhattan-distance (.start board) curr)
+        h (manhattan-distance curr (.end board))
         f (+ g h)]
     [f g h]))
 
@@ -58,26 +58,26 @@
                       (if (= f1 f2)
                         (if (<= h1 h2) -1 1)
                         (if (<= f1 f2) -1 1)))))
-                (.start board) (cost (.start board) (.start board) (.end board)))
+                (.start board) (cost board (.end board)))
          closed {}
          [width height] (dimensions board)
          [sx sy] (.start board)
          [ex ey] (.end board)]
      ; Verify that start and end coordinates are not unreachable.
-     (when (and (not= (nth (nth (.costs board) sy) sx) 1)
-                (not= (nth (nth (.costs board) ey) ex) 1))
+     (when (and (not= (nth (nth (.weights board) sy) sx) 1)
+                (not= (nth (nth (.weights board) ey) ex) 1))
        (search board width height open closed))))
   ([board width height open closed]
    (if-let [[coord [_ _ _ parent]] (peek open)]
      (if-not (= coord (.end board))
        (let [closed (assoc closed coord parent)
-             edges (edges (.costs board) width height closed coord)
+             edges (edges (.weights board) width height closed coord)
              open (reduce
                     (fn [open edge]
                       (if (not (contains? open edge))
-                        (assoc open edge (conj (cost edge (.start board) (.end board)) coord))
+                        (assoc open edge (conj (cost board edge) coord))
                         (let [[_ previousg] (open edge)
-                              [newf newg newh] (cost edge (.start board) (.end board))]
+                              [newf newg newh] (cost board edge)]
                           (if (< newg previousg)
                             (assoc open edge (conj [newf newg newh] coord))
                             open))))

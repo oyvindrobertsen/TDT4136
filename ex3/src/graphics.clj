@@ -30,7 +30,7 @@
 
   (let [s (.start grid)
         e (.end grid)]
-    (doseq [row (map-indexed enumerate (.costs grid))]
+    (doseq [row (map-indexed enumerate (.weights grid))]
       (doseq [tile (map-indexed enumerate (second row))]
         (let [y (first row)
               x (first tile)
@@ -46,6 +46,6 @@
         h (* 20 x)
         w (* 20 y)]
     (q/sketch
-      :title "grid"
+      :title "A*"
       :setup (partial draw grid path)
       :size [h w])))
