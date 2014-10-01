@@ -7,11 +7,22 @@
     (is (= #parse.Board{
                         :start [3 1],
                         :end [1 2],
-                        :costs ((-1 -1 -1 -1 -1 -1 -1)
-                                (-1  0  0  0  0  0 -1)
-                                (-1  0  0  0  0  0 -1)
-                                (-1 -1 -1 -1 -1 -1 -1))}
+                        :costs [[-1 -1 -1 -1 -1 -1 -1]
+                                [-1  0  0  0  0  0 -1]
+                                [-1  0  0  0  0  0 -1]
+                                [-1 -1 -1 -1 -1 -1 -1]]}
            (parse-board "resources/test-board.txt")))))
+
+(deftest parse-weighted-text-file-from-resources-test
+  (testing "that parse-board can read and properly parse weighted boards from 
+           resources"
+    (is (= #parse.Board{
+                        :start [0 0]
+                        :end [3 1]
+                        :costs [[ 0  5 10  5]
+                                [10  5 50  0]
+                                [50  1 50 50]]}
+           (parse-board "resources/weighted-test-board.txt")))))
 
 (deftest int-trans-test
   (testing ""
