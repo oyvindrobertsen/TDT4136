@@ -46,6 +46,6 @@
         h (* 20 x)
         w (* 20 y)]
     (q/sketch
-      :title "grid"
+      :title "A*"
       :setup (partial draw grid path)
       :size [h w])))
