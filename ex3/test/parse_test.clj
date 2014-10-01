@@ -22,7 +22,7 @@
     (is (=   1 (int-trans \r)))
     (is (=   0 (int-trans \A)))
     (is (=   0 (int-trans \B)))
-    ))
+    (is (=  -1 (int-trans \#)))))
 
 
 (deftest find-character-test
@@ -39,5 +39,4 @@
     (is (= [3 3] (dimensions (->Board [0 0] [0 0] [[0 0 0]
                                                    [1 1 1]
                                                    [0 0 0]]))))
-    (is (= [7 4] (dimensions (parse-board "resources/test-board.txt"))))
-    ))
+    (is (= [7 4] (dimensions (parse-board "resources/test-board.txt"))))))

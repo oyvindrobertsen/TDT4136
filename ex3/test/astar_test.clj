@@ -51,4 +51,4 @@
 
 (deftest bin-search-parse-test
   (testing "that the search function works with a parsed board"
-    (is (= [] (search (parse-board "resources/test-board.txt"))))))
+    (is (= [[3 1] [2 1] [2 2] [1 2]] (search (parse-board "resources/test-board.txt"))))))
