@@ -9,13 +9,29 @@
 
 
 (defn cost
- "Calculates the total estimated cost of a solution path from start through
- curr to end."
- [board curr]
+  "Calculates the total estimated cost of a solution path from start through
+  curr to end."
+  [board curr & arg]
   (let [g (manhattan-distance (.start board) curr)
         h (manhattan-distance curr (.end board))
         f (+ g h)]
     [f g h]))
+
+(defn weighted-cost
+  "Recursively defined function returning the cost of a weighted solution path
+  from start through curr to end."
+  [board curr closed]
+  (println curr closed)
+  (if (not (nil? (closed curr)))
+    (let [g (+ (* (manhattan-distance (.start board) curr) (parse/get-weight board curr)) 
+               (second (weighted-cost board (closed curr) closed)))
+          h (manhattan-distance curr (.end board))
+          f (+ g h)]
+      [f g h])
+    (let [g (* (manhattan-distance (.start board) curr) (parse/get-weight board curr))
+          h (manhattan-distance curr (.end board))
+          f (+ g h)]
+      [f g h])))
 
 (defn edges
   "Returns a list of all non-visited nodes adjacent to the x, y pair
@@ -48,8 +64,9 @@
   The first one is used as the entrypoint to the recursive function. The first
   overload initializes the various data structures needed in the subsequent
   recursive calls."
-  ([board]
-   (let [open (priority-map-by
+  ([board costfn]
+   (let [closed {}
+         open (priority-map-by
                 (fn [x y]
                   (if (= x y)
                     0
@@ -58,16 +75,15 @@
                       (if (= f1 f2)
                         (if (<= h1 h2) -1 1)
                         (if (<= f1 f2) -1 1)))))
-                (.start board) (cost board (.end board)))
-         closed {}
+                (.start board) (costfn board (.end board) closed))
          [width height] (dimensions board)
          [sx sy] (.start board)
          [ex ey] (.end board)]
      ; Verify that start and end coordinates are not unreachable.
      (when (and (not= (nth (nth (.weights board) sy) sx) 1)
                 (not= (nth (nth (.weights board) ey) ex) 1))
-       (search board width height open closed))))
-  ([board width height open closed]
+       (search board width height open closed costfn))))
+  ([board width height open closed costfn]
    (if-let [[coord [_ _ _ parent]] (peek open)]
      (if-not (= coord (.end board))
        (let [closed (assoc closed coord parent)
@@ -75,12 +91,12 @@
              open (reduce
                     (fn [open edge]
                       (if (not (contains? open edge))
-                        (assoc open edge (conj (cost board edge) coord))
+                        (assoc open edge (conj (cost board edge closed) coord))
                         (let [[_ previousg] (open edge)
-                              [newf newg newh] (cost board edge)]
+                              [newf newg newh] (cost board edge closed)]
                           (if (< newg previousg)
                             (assoc open edge (conj [newf newg newh] coord))
                             open))))
                     (pop open) edges)]
-         (recur board width height open closed))
+         (recur board width height open closed costfn))
        (path (.end board) parent closed)))))

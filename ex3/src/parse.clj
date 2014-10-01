@@ -56,8 +56,5 @@
         [x y]))
 
 (defn get-weight
-  ([board x y]
-   (get (get (.weights board) y) x))
-  ([board c]
-   (get-weight (first c) (second c))))
-
+  [board [x y]]
+  (nth (nth (.weights board) y) x))

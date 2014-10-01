@@ -54,8 +54,13 @@
                                                     :weights [[ 0  0 -1]
                                                               [-1  0 -1]
                                                               [-1 -1 -1]]
-                                                    })))))
+                                                    } cost)))))
 
 (deftest bin-search-parse-test
   (testing "that the search function works with a parsed board"
-    (is (= [[3 1] [2 1] [2 2] [1 2]] (search (parse-board "resources/test-board.txt"))))))
+    (is (= [[3 1] [2 1] [2 2] [1 2]] (search (parse-board "resources/test-board.txt") cost)))))
+
+(deftest weighted-search-parse-test
+  (testing "that the search function correctly finds the shortest path for
+           weighted boards."
+    (is = ([] (search (parse-board "resources/board-2-1.txt") weighted-cost)))))
