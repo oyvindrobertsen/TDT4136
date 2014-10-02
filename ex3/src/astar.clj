@@ -106,4 +106,6 @@
                             open))))
              open (reduce openfn (pop open) es)]
          (recur board width height open closed costfn))
-       (path (.end board) parent closed)))))
+       [(path (.end board) parent closed)
+        open
+        closed]))))

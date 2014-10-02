@@ -10,8 +10,8 @@
                  [astar/g-sort "Dijkstra"]]
         board (parse/parse-board board)]
    (doseq [[sort-fn title] sorters]
-        (let [path (astar/search board cost-fn sort-fn)]
-          (graphics/draw-grid board path title)))))
+        (let [[path open closed] (astar/search board cost-fn sort-fn)]
+          (graphics/draw-grid board path open closed title)))))
 
 (defn -main
   "Accepts a filename, attempts to parse the file to a search tree and perform A* on it."
