@@ -7,7 +7,6 @@
   [[x1 y1] [x2 y2]]
   (+ (Math/abs ^Integer (- x2 x1)) (Math/abs ^Integer (- y2 y1))))
 
-
 (defn cost
   "Calculates the total estimated cost of a solution path from start through
   curr to end."
@@ -21,16 +20,14 @@
   "Recursively defined function returning the cost of a weighted solution path
   from start through curr to end."
   [board curr closed]
-  (if (not (nil? (closed curr)))
-    (let [g (+ (+ (manhattan-distance (.start board) curr) (parse/get-weight board curr)) 
-               (second (weighted-cost board (closed curr) closed)))
+    (let [g (+ (manhattan-distance (.start board) curr)
+               (parse/get-weight board curr)
+               (if (nil? (closed curr))
+                 0
+                 (second (weighted-cost board (closed curr) closed))))
           h (manhattan-distance curr (.end board))
           f (+ g h)]
-      [f g h])
-    (let [g (* (manhattan-distance (.start board) curr) (parse/get-weight board curr))
-          h (manhattan-distance curr (.end board))
-          f (+ g h)]
-      [f g h])))
+      [f g h]))
 
 (defn edges
   "Returns a list of all non-visited nodes adjacent to the x, y pair
@@ -58,37 +55,48 @@
         path ; node is nil, we have hit starting node
         (recur (conj path node) (closed node))))))
 
+
+(defn f-h-sort
+  [x y]
+  (if (= x y)
+    0
+    (let [[f1 _ h1] x
+          [f2 _ h2] y]
+      (if (= f1 f2)
+        (if (<= h1 h2) -1 1)
+        (if (<= f1 f2) -1 1)))))
+
+(defn g-sort
+  [x y]
+    (let [[_ g1 _] x
+          [_ g2 _] y]
+      (if (= g1 g2)
+        0
+        (if (<= g1 g2) -1 1))))
+
 (defn search
   "Performs the actual search recursively. Has two overloads based on arity.
   The first one is used as the entrypoint to the recursive function. The first
   overload initializes the various data structures needed in the subsequent
   recursive calls."
-  ([board costfn]
+  ([board costfn comparefn]
    (let [closed {}
-         open (priority-map-by
-                (fn [x y]
-                  (if (= x y)
-                    0
-                    (let [[f1 _ h1] x
-                          [f2 _ h2] y]
-                      (if (= f1 f2)
-                        (if (<= h1 h2) -1 1)
-                        (if (<= f1 f2) -1 1)))))
-                (.start board) (costfn board (.end board) closed))
+         start (.start board)
+         open (priority-map-by comparefn start (costfn board start closed))
          [width height] (dimensions board)
-         [sx sy] (.start board)
+         [sx sy] start
          [ex ey] (.end board)]
      ; Verify that start and end coordinates are not unreachable.
      (when (and (not= (nth (nth (.weights board) sy) sx) 1)
                 (not= (nth (nth (.weights board) ey) ex) 1))
        (search board width height open closed costfn))))
   ([board width height open closed costfn]
+   ;(println (first (peek open)))
    (if-let [[coord [_ _ _ parent]] (peek open)]
      (if-not (= coord (.end board))
        (let [closed (assoc closed coord parent)
-             edges (edges (.weights board) width height closed coord)
-             open (reduce
-                    (fn [open edge]
+             es (edges (.weights board) width height closed coord)
+             openfn (fn [open edge]
                       (if (not (contains? open edge))
                         (assoc open edge (conj (costfn board edge closed) coord))
                         (let [[_ previousg] (open edge)
@@ -96,6 +104,6 @@
                           (if (< newg previousg)
                             (assoc open edge (conj [newf newg newh] coord))
                             open))))
-                    (pop open) edges)]
+             open (reduce openfn (pop open) es)]
          (recur board width height open closed costfn))
        (path (.end board) parent closed)))))
