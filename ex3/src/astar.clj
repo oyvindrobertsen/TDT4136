@@ -113,3 +113,39 @@
        [(path (.end board) parent closed)
         open
         closed]))))
+
+(defn astar-bfs
+  "Performs the actual search recursively. Has two overloads based on arity.
+  The first one is used as the entrypoint to the recursive function. The first
+  overload initializes the various data structures needed in the subsequent
+  recursive calls."
+  ([board costfn]
+   (let [closed {}
+         start (.start board)
+         open (hash-map start (costfn board start closed))
+         [width height] (dimensions board)
+         [sx sy] start
+         [ex ey] (.end board)]
+     ; Verify that start and end coordinates are not unreachable.
+     (when (and (not= (nth (nth (.weights board) sy) sx) 1)
+                (not= (nth (nth (.weights board) ey) ex) 1))
+       (astar-bfs board width height open closed costfn))))
+  ([board width height open closed costfn]
+   ;(println (first (peek open)))
+   (if-let [[coord [_ _ _ parent]] (last open)]
+     (if-not (= coord (.end board))
+       (let [closed (assoc closed coord parent)
+             es (edges (.weights board) width height closed coord)
+             openfn (fn [open edge]
+                      (if (not (contains? open edge))
+                        (assoc open edge (conj (costfn board edge closed) coord))
+                        (let [[_ previousg] (open edge)
+                              [newf newg newh] (costfn board edge closed)]
+                          (if (< newg previousg)
+                            (assoc open edge (conj [newf newg newh] coord))
+                            open))))
+             open (reduce openfn (dissoc open (key (last open))) es)]
+         (recur board width height open closed costfn))
+       [(path (.end board) parent closed)
+        open
+        closed]))))

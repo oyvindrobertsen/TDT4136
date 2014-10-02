@@ -18,9 +18,11 @@
 (defn solve
   [board]
   (let [[a-path a-open a-closed] (astar/search board astar/weighted-cost astar/f-h-sort)
-        [d-path d-open d-closed] (astar/search board dijkstra-cost astar/f-h-sort)]
+        [d-path d-open d-closed] (astar/search board dijkstra-cost astar/f-h-sort)
+        [b-path b-open b-closed] (astar/astar-bfs board astar/weighted-cost)]
     (graphics/draw-grid board a-path a-open a-closed "A*")
-    (graphics/draw-grid board d-path d-open d-closed "Djikstra")))
+    (graphics/draw-grid board d-path d-open d-closed "Djikstra")
+    (graphics/draw-grid board b-path b-open b-closed "BFS")))
 
 (defn -main
   "Accepts a filename, attempts to parse the file to a search tree and perform A* on it."
