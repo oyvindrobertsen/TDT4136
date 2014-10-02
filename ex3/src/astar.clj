@@ -20,14 +20,14 @@
   "Recursively defined function returning the cost of a weighted solution path
   from start through curr to end."
   [board curr closed]
-    (let [g (+ (manhattan-distance (.start board) curr)
-               (parse/get-weight board curr)
-               (if (nil? (closed curr))
-                 0
-                 (second (weighted-cost board (closed curr) closed))))
-          h (manhattan-distance curr (.end board))
-          f (+ g h)]
-      [f g h]))
+  (let [g (+ (manhattan-distance (.start board) curr)
+             (parse/get-weight board curr)
+             (if (nil? (closed curr))
+               0
+               (second (weighted-cost board (closed curr) closed))))
+        h (manhattan-distance curr (.end board))
+        f (+ g  h)]
+    [f g h]))
 
 (defn edges
   "Returns a list of all non-visited nodes adjacent to the x, y pair
@@ -68,11 +68,15 @@
 
 (defn g-sort
   [x y]
-    (let [[_ g1 _] x
-          [_ g2 _] y]
-      (if (= g1 g2)
-        0
-        (if (<= g1 g2) -1 1))))
+  (let [[_ g1 _] x
+        [_ g2 _] y]
+    (if (= g1 g2)
+      0
+      (if (<= g1 g2) -1 1))))
+
+(defn fifo-sort
+  [x y]
+  -1)
 
 (defn search
   "Performs the actual search recursively. Has two overloads based on arity.
