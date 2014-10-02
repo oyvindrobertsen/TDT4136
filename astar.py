@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from heapq import *
-from readMap import *
 from grid import Grid
 from draw_map import *
 import os
