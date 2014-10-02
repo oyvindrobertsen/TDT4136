@@ -63,4 +63,4 @@
 (deftest weighted-search-parse-test
   (testing "that the search function correctly finds the shortest path for
            weighted boards."
-    (is = ([] (search (parse-board "resources/board-2-1.txt") weighted-cost)))))
+    (is (= [] (search (parse-board "resources/board-2-1.txt") weighted-cost)))))

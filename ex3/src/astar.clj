@@ -21,9 +21,8 @@
   "Recursively defined function returning the cost of a weighted solution path
   from start through curr to end."
   [board curr closed]
-  (println curr closed)
   (if (not (nil? (closed curr)))
-    (let [g (+ (* (manhattan-distance (.start board) curr) (parse/get-weight board curr)) 
+    (let [g (+ (+ (manhattan-distance (.start board) curr) (parse/get-weight board curr)) 
                (second (weighted-cost board (closed curr) closed)))
           h (manhattan-distance curr (.end board))
           f (+ g h)]
@@ -91,9 +90,9 @@
              open (reduce
                     (fn [open edge]
                       (if (not (contains? open edge))
-                        (assoc open edge (conj (cost board edge closed) coord))
+                        (assoc open edge (conj (costfn board edge closed) coord))
                         (let [[_ previousg] (open edge)
-                              [newf newg newh] (cost board edge closed)]
+                              [newf newg newh] (costfn board edge closed)]
                           (if (< newg previousg)
                             (assoc open edge (conj [newf newg newh] coord))
                             open))))
