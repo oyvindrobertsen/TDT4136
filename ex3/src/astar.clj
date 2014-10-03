@@ -66,18 +66,6 @@
         (if (<= h1 h2) -1 1)
         (if (<= f1 f2) -1 1)))))
 
-(defn g-sort
-  [x y]
-  (let [[_ g1 _] x
-        [_ g2 _] y]
-    (if (= g1 g2)
-      0
-      (if (<= g1 g2) -1 1))))
-
-(defn fifo-sort
-  [x y]
-  -1)
-
 (defn search
   "Performs the actual search recursively. Has two overloads based on arity.
   The first one is used as the entrypoint to the recursive function. The first
