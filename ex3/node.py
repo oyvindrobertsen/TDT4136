@@ -8,7 +8,6 @@ class Node(object):
         self.g = None
         self.h = None
         self.parent = None
-
         self.type = None
         self.weight = None
 
