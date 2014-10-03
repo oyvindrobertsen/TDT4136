@@ -27,10 +27,10 @@ def get_route_coordinates(i, j):
 
 def get_visited_coordinates(i, j):
     return (
-        j*SCALE+(SCALE/2-1),
-        i*SCALE+(SCALE/2-1),
-        j*SCALE+(SCALE/2+1),
-        i*SCALE+(SCALE/2+1)
+        j*SCALE+(SCALE/2-2),
+        i*SCALE+(SCALE/2-2),
+        j*SCALE+(SCALE/2+2),
+        i*SCALE+(SCALE/2+2)
         )
 
 def draw_map(grid, filename, path=None, open_list=None, closed_list=None):
@@ -46,7 +46,7 @@ def draw_map(grid, filename, path=None, open_list=None, closed_list=None):
     # Draw visited tiles
     if open_list:
         for node in open_list:
-            im.paste('#9400d3', get_visited_coordinates(node.x, node.y))
+            im.paste('#9999ff', get_visited_coordinates(node.x, node.y))
 
     # Draw closed tiles
     if closed_list:

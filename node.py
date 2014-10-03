@@ -1,5 +1,4 @@
 
-
 class Node(object):
 
     def __init__(self, x, y, walkable=None):
@@ -14,6 +13,8 @@ class Node(object):
         self.weight = None
 
     def __lt__(self, other):
+        if self.f() == other.f():
+            return self.h < other.h
         return self.f() < other.f()
 
     def f(self):
