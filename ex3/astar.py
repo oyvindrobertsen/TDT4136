@@ -7,53 +7,44 @@ from grid import Grid
 from draw_map import *
 
 
-def find_path(grid, draw_all_steps=False, bfs=False, dijkstra=False):
+def find_path(grid, algorithm='astar'):
     closed_nodes = list()
-    start_node, goal_node = grid.startNode, grid.goalNode
 
     open_nodes = list()
-    if bfs:
-        open_nodes.append(start_node)
+    if algorithm == 'bfs':
+        open_nodes.append(grid.start_node)
     else:
-        heappush(open_nodes, start_node)
-
-        # Code to generate png for each step
-        # if draw_all_steps:
-        # filename = "to_gif_1-1_%04d.png"
-        # filename_count = 1
+        heappush(open_nodes, grid.start_node)
 
     while open_nodes:
-        if bfs:
-            node = open_nodes.pop(0)
-        else:
-            node = heappop(open_nodes)
-        closed_nodes.append(node)
+        current_node = open_nodes.pop(0) if algorithm == 'bfs' else heappop(open_nodes)
+        closed_nodes.append(current_node)
 
-        if node == grid.goalNode:
-            return get_backtrace(node), open_nodes, closed_nodes
+        if current_node == grid.end_node:
+            return backtrack(current_node), open_nodes, closed_nodes
 
-        neighbors = grid.getNeightbors(node)
+        adjacent_nodes = grid.get_adjacent_nodes(current_node)
 
-        for neighbor in neighbors:
-            if neighbor in closed_nodes:
+        for adjacent_node in adjacent_nodes:
+            if adjacent_node in closed_nodes:
                 continue
 
-            ng = node.g + neighbor.weight
+            new_g = current_node.g + adjacent_node.weight
 
-            if (neighbor not in open_nodes) or (neighbor.g and ng < neighbor.g):
-                neighbor.g = ng
+            if (adjacent_node not in open_nodes) or (adjacent_node.g and new_g < adjacent_node.g):
+                adjacent_node.g = new_g
 
-                neighbor.h = 0 if dijkstra else grid.h(neighbor, goal_node)
-                neighbor.parent = node
+                adjacent_node.h = 0 if algorithm == 'dijkstra' else grid.manhattan_distance(adjacent_node, grid.end_node)
+                adjacent_node.parent = current_node
 
-                if neighbor not in open_nodes:
-                    if bfs:
-                        open_nodes.append(neighbor)
+                if adjacent_node not in open_nodes:
+                    if algorithm == 'bfs':
+                        open_nodes.append(adjacent_node)
                     else:
-                        heappush(open_nodes, neighbor)
+                        heappush(open_nodes, adjacent_node)
 
 
-def get_backtrace(node):
+def backtrack(node):
     nodes = []
     while node.parent:
         nodes.append(node)
@@ -61,13 +52,13 @@ def get_backtrace(node):
     return nodes[1:]
 
 
-def print_map(grid, path):
-    print filepath
-    matrix = [row[:] for row in grid.matrix]
+def print_map(map, path):
+    print file_path
+    grid = [row[:] for row in map.lines]
     for node in path:
-        matrix[node.x][node.y] = "O"
+        grid[node.x][node.y] = "O"
 
-    for row in matrix:
+    for row in grid:
         print "".join(row)
     print
 
@@ -75,28 +66,18 @@ def print_map(grid, path):
 if __name__ == "__main__":
     dir_name = os.getcwd()
     for filename in os.listdir(os.path.join(dir_name, 'boards')):
+        for algorithm in ['astar', 'dijkstra', 'bfs']:
+            # Create a Grid object en
+            file_path = os.path.join(dir_name, 'boards', filename)
+            grid = Grid(file_path)
 
-        # Create a Grid object en
-        filepath = dir_name + '/boards/' + filename
-        grid = Grid(filepath)
+            # Find path with additional info
+            path, open_list, closed_list = find_path(grid, algorithm=algorithm)
 
-        # Find path with additional info
-        bfs = False
-        dijkstra = False
-        path, open_list, closed_list = find_path(grid, bfs=bfs, dijkstra=dijkstra)
+            # Print the map including best path to console
+            # print_map(grid, path)
 
-        # Print the map including best path to console
-#        print_map(grid, path)
+            # Draw the board to png-file, requires PIL.
+            new_file = os.path.join(dir_name, "pictures", filename.replace('.txt', '-{}.png'.format(algorithm)))
 
-        # Draw the board to png-file, requires PIL.
-        if bfs:
-            what = 'bfs'
-        elif dijkstra:
-            what = 'dijkstra'
-        else:
-            what = 'astar'
-
-
-        new_file = os.path.join(dir_name, "pictures", filename.replace('.txt', '-{}.png'.format(what)))
-
-        draw_map(grid, new_file, path, open_list, closed_list)
+            draw_map(grid, new_file, path, open_list, closed_list)
