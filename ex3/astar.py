@@ -1,66 +1,62 @@
 # -*- coding: utf-8 -*-
 
 from heapq import *
+import os
+
 from grid import Grid
 from draw_map import *
-import os
 
 
 def find_path(grid, draw_all_steps=False, bfs=False, dijkstra=False):
-    closed_list = []
-    startNode = grid.startNode
-    goalNode = grid.goalNode
+    closed_nodes = list()
+    start_node, goal_node = grid.startNode, grid.goalNode
 
-    open_list = []
+    open_nodes = list()
     if bfs:
-        open_list.append(startNode)
+        open_nodes.append(start_node)
     else:
-        heappush(open_list, startNode)
+        heappush(open_nodes, start_node)
 
-
-    # Code to generate png for each step
-    # if draw_all_steps:
-        # filename = "to_gif_1-1_%04d.png"
-        # filename_count = 1
-
-    while(open_list):
-        if bfs:
-            node = open_list.pop(0)
-        else:
-            node = heappop(open_list)
-        closed_list.append(node)
 
         # Code to generate png for each step
         # if draw_all_steps:
-            # draw_map(grid, filename % filename_count, None, open_list, closed_list)
-            # filename_count += 1
+        # filename = "to_gif_1-1_%04d.png"
+        # filename_count = 1
 
-        if (node == grid.goalNode):
-            best_path = get_backtrace(node)
-            return best_path, open_list, closed_list
+    while open_nodes:
+        if bfs:
+            node = open_nodes.pop(0)
+        else:
+            node = heappop(open_nodes)
+        closed_nodes.append(node)
 
-        neightbors = grid.getNeightbors(node)
+        # Code to generate png for each step
+        # if draw_all_steps:
+        # draw_map(grid, filename % filename_count, None, open_list, closed_list)
+        # filename_count += 1
 
-        for neighbor in neightbors:
-            if neighbor in closed_list:
+        if node == grid.goalNode:
+            return get_backtrace(node), open_nodes, closed_nodes
+
+        neighbors = grid.getNeightbors(node)
+
+        for neighbor in neighbors:
+            if neighbor in closed_nodes:
                 continue
 
             ng = node.g + neighbor.weight
 
-            if (neighbor not in open_list) or (neighbor.g and ng < neighbor.g):
+            if (neighbor not in open_nodes) or (neighbor.g and ng < neighbor.g):
                 neighbor.g = ng
 
-                if dijkstra:
-                    neighbor.h = 0
-                else:
-                    neighbor.h = grid.h(neighbor, goalNode)
+                neighbor.h = 0 if dijkstra else grid.h(neighbor, goal_node)
                 neighbor.parent = node
 
-                if neighbor not in open_list:
+                if neighbor not in open_nodes:
                     if bfs:
-                        open_list.append(neighbor)
+                        open_nodes.append(neighbor)
                     else:
-                        heappush(open_list, neighbor)
+                        heappush(open_nodes, neighbor)
 
 
 def get_backtrace(node):
@@ -78,13 +74,13 @@ def print_map(grid, path):
         matrix[node.x][node.y] = "O"
 
     for row in matrix:
-        print("".join(row))
+        print "".join(row)
     print
 
 
 if __name__ == "__main__":
     dir_name = os.getcwd()
-    for filename in os.listdir(os.path.join(dir_name + '/boards/')):
+    for filename in os.listdir(os.path.join(dir_name, 'boards')):
 
         # Create a Grid object en
         filepath = dir_name + '/boards/' + filename
@@ -100,10 +96,13 @@ if __name__ == "__main__":
 
         # Draw the board to png-file, requires PIL.
         if bfs:
-            new_file = dir_name + "/pictures/" + filename.replace('.txt', '-bfs.png')
+            what = 'bfs'
         elif dijkstra:
-            new_file = dir_name + "/pictures/" + filename.replace('.txt', '-dijkstra.png')
+            what = 'dijkstra'
         else:
-            new_file = dir_name + "/pictures/" + filename.replace('.txt', '.png')
+            what = 'astar'
+
+
+        new_file = os.path.join(dir_name, "pictures", filename.replace('.txt', '-{}.png'.format(what)))
 
         draw_map(grid, new_file, path, open_list, closed_list)
