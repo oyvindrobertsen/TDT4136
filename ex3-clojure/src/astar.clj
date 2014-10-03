@@ -55,7 +55,6 @@
         path ; node is nil, we have hit starting node
         (recur (conj path node) (closed node))))))
 
-
 (defn f-h-sort
   [x y]
   (if (= x y)
@@ -83,7 +82,7 @@
                 (not= (nth (nth (.weights board) ey) ex) 1))
        (search board width height open closed costfn))))
   ([board width height open closed costfn]
-   ;(println (first (peek open)))
+   ;(println open)
    (if-let [[coord [_ _ _ parent]] (peek open)]
      (if-not (= coord (.end board))
        (let [closed (assoc closed coord parent)
@@ -97,6 +96,7 @@
                             (assoc open edge (conj [newf newg newh] coord))
                             open))))
              open (reduce openfn (pop open) es)]
+         (println open)
          (recur board width height open closed costfn))
        [(path (.end board) parent closed)
         open

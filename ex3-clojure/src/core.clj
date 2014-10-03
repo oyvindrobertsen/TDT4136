@@ -27,13 +27,13 @@
 (defn -main
   "Accepts a filename, attempts to parse the file to a search tree and perform A* on it."
   [& args]
-  (let [b ["resources/board-1-1.txt"
-           "resources/board-1-2.txt"
+  (let [b [;"resources/board-1-1.txt"
+           ;"resources/board-1-2.txt"
            "resources/board-1-3.txt"
-           "resources/board-1-4.txt"
-           "resources/board-2-1.txt"
-           "resources/board-2-2.txt"
-           "resources/board-2-3.txt"
-           "resources/board-2-4.txt"
+           ;"resources/board-1-4.txt"
+           ;"resources/board-2-1.txt"
+           ;"resources/board-2-2.txt"
+           ;"resources/board-2-3.txt"
+           ;"resources/board-2-4.txt"
            ]]
     (doseq [b b] (solve (parse/parse-board b)))))
