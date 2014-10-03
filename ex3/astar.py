@@ -17,7 +17,6 @@ def find_path(grid, draw_all_steps=False, bfs=False, dijkstra=False):
     else:
         heappush(open_nodes, start_node)
 
-
         # Code to generate png for each step
         # if draw_all_steps:
         # filename = "to_gif_1-1_%04d.png"
@@ -29,11 +28,6 @@ def find_path(grid, draw_all_steps=False, bfs=False, dijkstra=False):
         else:
             node = heappop(open_nodes)
         closed_nodes.append(node)
-
-        # Code to generate png for each step
-        # if draw_all_steps:
-        # draw_map(grid, filename % filename_count, None, open_list, closed_list)
-        # filename_count += 1
 
         if node == grid.goalNode:
             return get_backtrace(node), open_nodes, closed_nodes
@@ -92,7 +86,7 @@ if __name__ == "__main__":
         path, open_list, closed_list = find_path(grid, bfs=bfs, dijkstra=dijkstra)
 
         # Print the map including best path to console
-        print_map(grid, path)
+#        print_map(grid, path)
 
         # Draw the board to png-file, requires PIL.
         if bfs:

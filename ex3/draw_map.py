@@ -7,35 +7,37 @@ COLOR_MAP = {
     'm': '#8b8989',
     'w': '#0000ff',
     'A': '#ff0000',
-    'B': '#9400d3',
+    'B': '#00ff00',
     '#': '#8b8989',
     '.': '#ffffff'
 }
 
 SCALE = 16
 
+
 def get_box_coordinates(i, j):
-    return (j*SCALE+1, i*SCALE+1, (j+1)*SCALE-1, (i+1)*SCALE-1)
+    return (j * SCALE + 1, i * SCALE + 1, (j + 1) * SCALE - 1, (i + 1) * SCALE - 1)
+
 
 def get_route_coordinates(i, j):
     return (
-        j*SCALE+(SCALE/2-3),
-        i*SCALE+(SCALE/2-3),
-        j*SCALE+(SCALE/2+3),
-        i*SCALE+(SCALE/2+3)
-        )
+        j * SCALE + (SCALE / 2 - 3),
+        i * SCALE + (SCALE / 2 - 3),
+        j * SCALE + (SCALE / 2 + 3),
+        i * SCALE + (SCALE / 2 + 3))
+
 
 def get_visited_coordinates(i, j):
     return (
-        j*SCALE+(SCALE/2-2),
-        i*SCALE+(SCALE/2-2),
-        j*SCALE+(SCALE/2+2),
-        i*SCALE+(SCALE/2+2)
-        )
+        j * SCALE + (SCALE / 2 - 2),
+        i * SCALE + (SCALE / 2 - 2),
+        j * SCALE + (SCALE / 2 + 2),
+        i * SCALE + (SCALE / 2 + 2))
+
 
 def draw_map(grid, filename, path=None, open_list=None, closed_list=None):
 
-    im = Image.new("RGB", (grid.width*SCALE, grid.height*SCALE))
+    im = Image.new("RGB", (grid.width * SCALE, grid.height * SCALE))
 
     # Draw map
     for i, row in enumerate(grid.matrix):
@@ -59,4 +61,3 @@ def draw_map(grid, filename, path=None, open_list=None, closed_list=None):
             im.paste('#000000', get_route_coordinates(node.x, node.y))
 
     im.save(filename)
-    
