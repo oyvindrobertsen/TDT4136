@@ -40,7 +40,7 @@ def draw_map(grid, filename, path=None, open_list=None, closed_list=None):
     im = Image.new("RGB", (grid.width * SCALE, grid.height * SCALE))
 
     # Draw map
-    for i, row in enumerate(grid.matrix):
+    for i, row in enumerate(grid.lines):
         for j, elem in enumerate(row):
             color = COLOR_MAP[elem]
             im.paste(color, get_box_coordinates(i, j))
