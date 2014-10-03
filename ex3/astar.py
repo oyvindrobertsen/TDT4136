@@ -67,6 +67,6 @@ if __name__ == "__main__":
             grid = Grid(os.path.join(dir_name, 'boards', filename))
 
             image_name = filename.replace('.txt', '-{}.png'.format(algorithm))
-            image_path = os.path.join(dir_name, "pictures", image_name)
+            image_path = os.path.join(dir_name, "report/img", image_name)
 
             draw_map(grid, image_path, *find_path(grid, algorithm))
