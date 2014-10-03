@@ -22,7 +22,7 @@ class Grid(object):
         try:
             open_file = open(file_path)
         except IOError:
-            print 'File not found'
+            print "Could not open {}".format(file_path)
 
         self.lines = [[c for c in line.strip()] for line in open_file.readlines() if not line.isspace()]
         self.node_weights = [list(map(get_weight, row)) for row in self.lines]
@@ -32,11 +32,9 @@ class Grid(object):
 
         for i, row in enumerate(nodes):
             for j, node in enumerate(row):
-
                 node.open = False if self.lines[i][j] == "#" else True
                 node.weight = self.node_weights[i][j]
 
-                # Set start and goal node
                 if self.lines[i][j] == "A":
                     self.start_node = node
                     self.start_node.g = 0
@@ -45,27 +43,12 @@ class Grid(object):
 
         self.nodes = nodes
 
-    def is_open_at(self, x, y):
-        return self.is_within_bounds(x, y) and self.nodes[x][y].open
-
     def is_within_bounds(self, x, y):
         return x in range(self.height) and y in range(self.width)
 
+    def is_open_at(self, x, y):
+        return self.is_within_bounds(x, y) and self.nodes[x][y].open
+
     def get_adjacent_nodes(self, node):
-        x = node.x
-        y = node.y
-        adjacent_nodes = []
-
-        if self.is_open_at(x, y - 1):
-            adjacent_nodes.append(self.nodes[x][y - 1])
-
-        if self.is_open_at(x, y + 1):
-            adjacent_nodes.append(self.nodes[x][y + 1])
-
-        if self.is_open_at(x - 1, y):
-            adjacent_nodes.append(self.nodes[x - 1][y])
-
-        if self.is_open_at(x + 1, y):
-            adjacent_nodes.append(self.nodes[x + 1][y])
-
-        return adjacent_nodes
+        candidates = [(node.x + a, node.y + b) for b in range(-1, 2) for a in range(-1, 2) if abs(a) != abs(b)]
+        return [self.nodes[n[0]][n[1]] for n in candidates if self.is_open_at(*n)]

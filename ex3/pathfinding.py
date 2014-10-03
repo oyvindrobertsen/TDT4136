@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from heapq import *
-import os
-
-from grid import Grid, manhattan_distance
-from draw_map import *
+from grid import manhattan_distance as heuristic
 from node import push_node, pop_node
-
-ALGORITHMS = ['astar', 'dijkstra', 'bfs']
 
 
 def find_path(grid, algorithm='astar'):
@@ -35,38 +29,20 @@ def find_path(grid, algorithm='astar'):
             if (adjacent_node not in open_nodes) or (adjacent_node.g and new_g < adjacent_node.g):
                 adjacent_node.g = new_g
 
-                adjacent_node.h = 0 if algorithm == 'dijkstra' else manhattan_distance(adjacent_node, grid.end_node)
+                adjacent_node.h = 0 if algorithm == 'dijkstra' else heuristic(adjacent_node, grid.end_node)
                 adjacent_node.parent = current_node
 
                 if adjacent_node not in open_nodes:
                     push_node(open_nodes, adjacent_node, heap=use_heap_methods)
 
 
-def backtrack(node):
-    nodes = []
-    while node.parent:
-        nodes.append(node)
-        node = node.parent
-    return nodes
+def backtrack(node, path=None):
+    if path is None:
+        path = []
 
+    path.append(node)
 
-def print_map(map, path):
-    grid = [row[:] for row in map.lines]
-    for node in path:
-        grid[node.x][node.y] = "O"
+    if node.parent is None:
+        return path[::-1]
 
-    for row in grid:
-        print "".join(row)
-    print
-
-
-if __name__ == "__main__":
-    dir_name = os.getcwd()
-    for filename in os.listdir(os.path.join(dir_name, 'boards')):
-        for algorithm in ALGORITHMS:
-            grid = Grid(os.path.join(dir_name, 'boards', filename))
-
-            image_name = filename.replace('.txt', '-{}.png'.format(algorithm))
-            image_path = os.path.join(dir_name, "report/img", image_name)
-
-            draw_map(grid, image_path, *find_path(grid, algorithm))
+    return backtrack(node.parent, path)
