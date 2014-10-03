@@ -1,10 +1,22 @@
+from _heapq import heappush, heappop
+
+
+def push_node(data_structure, node, heap=False):
+    if heap:
+        heappush(data_structure, node)
+    else:
+        data_structure.append(node)
+
+
+def pop_node(data_structure, heap=False):
+    return heappop(data_structure) if heap else data_structure.pop(0)
+
 
 class Node(object):
-
-    def __init__(self, x, y, walkable=None):
+    def __init__(self, x, y, open=None):
         self.x = x
         self.y = y
-        self.walkable = walkable if (walkable is not None) else True
+        self.open = open if (open is not None) else True
         self.g = None
         self.h = None
         self.parent = None

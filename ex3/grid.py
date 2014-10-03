@@ -14,6 +14,8 @@ WEIGHTS = {
 
 get_weight = lambda x: WEIGHTS[x]
 
+manhattan_distance = lambda a, b: abs(a.x - b.x) + abs(a.y - b.y)
+
 
 class Grid(object):
     def __init__(self, file_path):
@@ -31,7 +33,7 @@ class Grid(object):
         for i, row in enumerate(nodes):
             for j, node in enumerate(row):
 
-                node.walkable = False if self.lines[i][j] == "#" else True
+                node.open = False if self.lines[i][j] == "#" else True
                 node.weight = self.node_weights[i][j]
 
                 # Set start and goal node
@@ -43,8 +45,8 @@ class Grid(object):
 
         self.nodes = nodes
 
-    def is_walkable_at(self, x, y):
-        return self.is_within_bounds(x, y) and self.nodes[x][y].walkable
+    def is_open_at(self, x, y):
+        return self.is_within_bounds(x, y) and self.nodes[x][y].open
 
     def is_within_bounds(self, x, y):
         return x in range(self.height) and y in range(self.width)
@@ -54,21 +56,16 @@ class Grid(object):
         y = node.y
         adjacent_nodes = []
 
-        if self.is_walkable_at(x, y - 1):
+        if self.is_open_at(x, y - 1):
             adjacent_nodes.append(self.nodes[x][y - 1])
 
-        if self.is_walkable_at(x, y + 1):
+        if self.is_open_at(x, y + 1):
             adjacent_nodes.append(self.nodes[x][y + 1])
 
-        if self.is_walkable_at(x - 1, y):
+        if self.is_open_at(x - 1, y):
             adjacent_nodes.append(self.nodes[x - 1][y])
 
-        if self.is_walkable_at(x + 1, y):
+        if self.is_open_at(x + 1, y):
             adjacent_nodes.append(self.nodes[x + 1][y])
 
         return adjacent_nodes
-
-    @staticmethod
-    def manhattan_distance(a, b):
-        return abs(a.x - b.x) + abs(a.y - b.y)
-
