@@ -1,12 +1,12 @@
 \section{Problem A: Pathfinding in 2D Games}
 
-All deliverables in the form of code are included aside the report.
+All deliverables in the form of code are enclosed.
 
 \subsection*{Subproblem A.1: Grids with Obstacles}
 
 The following figures show the solution path calculated by the A* implementation,
-with the $\text{OPEN}$ and $\text{CLOSED}$ sets visualized as respectively blue
-and red dots.
+with the $\text{OPEN}$ and $\text{CLOSED}$ sets visualized as respectively cyan
+and pink dots.
 
 \begin{figure}[h!]
   \centering
@@ -124,6 +124,7 @@ All algorithms find the shortest path, but again, A* is much more efficient.
   \centering
     \includegraphics[width=0.5\textwidth]{img/board-1-3-astar}
     \caption{Board 1.3 - A*}
+
 \end{figure}
 
 \begin{figure}[h!]
@@ -165,4 +166,108 @@ Again, A* is much more efficient than the others.
 For this board, we see that there's not much difference between the three
 algorithms. A* explores marginally fewer nodes than the other two.
 
+\newpage
 
+\subsubsection*{Board 2.1}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-1-astar}
+    \caption{Board 2.1 - A*}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-1-dijkstra}
+    \caption{Board 2.1 - Dijkstra}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-1-bfs}
+    \caption{Board 2.1 - BFS}
+\end{figure}
+
+For this board, we see that A* and Djikstra both find equally optimal paths,
+both processing about the same number of nodes. (A* slightly lower as the 
+heuristic is taken into consideration.) BFS processes fewer nodes, but finds an
+extremely unoptimized path.
+
+\newpage
+
+\subsubsection*{Board 2.2}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-2-astar}
+    \caption{Board 2.2 - A*}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-2-dijkstra}
+    \caption{Board 2.2 - Dijkstra}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-2-bfs}
+    \caption{Board 2.2 - BFS}
+\end{figure}
+
+A* and Dijkstra both perform reasonably well here, while BFS makes quite a few
+suboptimal choices while also processing more nodes.
+
+For the case of A* vs. Djikstra, we see that A* (as it should) refrains from
+processing nodes that have low cell weight, but also have higher heuristic values.
+
+\newpage
+
+\subsubsection*{Board 2.3}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-3-astar}
+    \caption{Board 2.3 - A*}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-3-dijkstra}
+    \caption{Board 2.3 - Dijkstra}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-3-bfs}
+    \caption{Board 2.3 - BFS}
+\end{figure}
+
+Again, A* and Dijkstra both find equally optimal paths, while BFS naively picks
+the first path it can find.
+
+\newpage
+
+\subsubsection*{Board 2.4}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-4-astar}
+    \caption{Board 2.4 - A*}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-4-dijkstra}
+    \caption{Board 2.4 - Dijkstra}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\textwidth]{img/board-2-4-bfs}
+    \caption{Board 2.4 - BFS}
+\end{figure}
+
+For this final board, A* and Dijkstra find the same path. A* processes slightly
+fewer nodes, notably those in the bottom right corner of the board.
+BFS processes few nodes, but finds a suboptimal path.
