@@ -2,10 +2,9 @@ import os
 
 from graphics import draw_map
 from grid import Grid
-from pathfinding import find_path
+from pathfinding import find_path, ALGORITHMS
 
 
-ALGORITHMS = ['astar', 'dijkstra', 'bfs']
 if __name__ == "__main__":
     dir_name = os.getcwd()
     for filename in os.listdir(os.path.join(dir_name, 'boards')):
