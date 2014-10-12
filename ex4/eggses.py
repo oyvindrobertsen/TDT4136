@@ -46,13 +46,15 @@ class Carton:
         return ret
 
     def obj_func(self):
-        row_d = abs(sum(map(lambda l: sum(l) - self.k, self.grid)))
-        col_d = abs(sum(sum(row[j] for row in self.grid) - self.k for j in range(self.width)))
+        row_d = sum(map(lambda l: max(0, sum(l) - self.k), self.grid))
+        col_d = sum(max(0, sum(row[j] for row in self.grid) - self.k) for j in range(self.width))
 
         grid = array(self.grid)
         flip = flipud(grid)
-        di1_d = abs(sum((grid.trace(d) - min(self.k, len(grid.diagonal(d))) for d in range(-(self.width - 1), self.width))))
-        di2_d = abs(sum((flip.trace(d) - min(self.k, len(flip.diagonal(d))) for d in range(-(self.height - 1), self.height))))
+        r1 = range(-(self.width - 1), self.width)
+        r2 = range(-(self.height - 1), self.height)
+        di1_d = sum(max(0, grid.trace(d) - min(self.k, len(grid.diagonal(d)))) for d in r1)
+        di2_d = sum(max(0, flip.trace(d) - min(self.k, len(flip.diagonal(d)))) for d in r2)
 
         perf = self.k * (self.height + self.width + 2 * (self.width + self.height - 1))
         return (perf - row_d - col_d - di1_d - di2_d) / perf
@@ -60,12 +62,17 @@ class Carton:
     def __str__(self):
         ret = ""
         for j in range(self.height):
-            ret += str(self.grid[j])
+            ret += ' '.join("O" if x else "." for x in self.grid[j])
+            ret += ' | ' + str(sum(self.grid[j]))
             ret += '\n'
+        ret += ' '.join('-' for j in range(self.width))
+        ret += '\n'
+        ret += ' '.join(str(sum(row[j] for row in self.grid)) for j in range(self.width))
+        ret += '\n'
         ret += str(self.obj_func())
         ret += '\n'
         return ret
 
 
-annealer = SimAnnealer(100, 1.0, 5, 0.8)
+annealer = SimAnnealer(10, 0.2, 5, 0.99)
 print(annealer.search(Carton(2, ONES)))

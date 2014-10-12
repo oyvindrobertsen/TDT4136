@@ -20,7 +20,7 @@ class SimAnnealer(object):
             neighbors = p.gen_neighbors(self.num_neighbors)
             neighbor_fitness = {neighbor: neighbor.obj_func() for neighbor
                                 in neighbors}
-            p_max = max(neighbor_fitness.iterkeys(), key=(lambda key:
+            p_max = max(neighbor_fitness.keys(), key=(lambda key:
                         neighbor_fitness[key]))
             q = (neighbor_fitness[p_max] - fitness) / fitness
             p = min(1, exp(-q / t))
