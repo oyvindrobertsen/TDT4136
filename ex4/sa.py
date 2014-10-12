@@ -4,13 +4,9 @@ from random import random, choice
 
 class SimAnnealer(object):
 
-    def __init__(self, p_start, t_max, delta_t, obj_func, gen_neighbors,
-                 num_neighbors, f_target):
-        self.p_start = p_start
+    def __init__(self, t_max, delta_t, num_neighbors, f_target):
         self.t_max = t_max
         self.delta_t = delta_t
-        self.obj_func = obj_func
-        self.gen_neighbors = gen_neighbors
         self.num_neighbors = num_neighbors
         self.f_target = f_target
 
@@ -18,11 +14,11 @@ class SimAnnealer(object):
         p = start
         t = self.t_max
         while p:
-            fitness = self.obj_func(p)
+            fitness = p.obj_func()
             if fitness >= self.f_target:
                 return p
-            neighbors = self.gen_neighbors(self.num_neighbors)
-            neighbor_fitness = {neighbor: self.obj_func(neighbor) for neighbor
+            neighbors = p.gen_neighbors(self.num_neighbors)
+            neighbor_fitness = {neighbor: neighbor.obj_func() for neighbor
                                 in neighbors}
             p_max = max(neighbor_fitness.iterkeys(), key=(lambda key:
                         neighbor_fitness[key]))
