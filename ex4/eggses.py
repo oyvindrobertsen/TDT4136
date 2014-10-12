@@ -1,8 +1,11 @@
-from numpy.lib.twodim_base import flipud
-from numpy.ma.core import array
 from random import choice
 from copy import deepcopy
+
+from numpy.lib.twodim_base import flipud
+from numpy.ma.core import array
+
 from sa import SimAnnealer
+
 
 SOLUTION552 = [[1, 0, 1, 0, 0],
                [0, 1, 0, 0, 1],
@@ -16,6 +19,12 @@ ONES = [[1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1]]
 
+ZEROES = [[0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]]
+
 MNKs = [(5, 5, 2),
         (6, 6, 2),
         (8, 8, 1),
@@ -23,7 +32,6 @@ MNKs = [(5, 5, 2),
 
 
 class Carton:
-
     def __init__(self, k, grid):
         self.grid = deepcopy(grid)
         self.k = k
@@ -46,24 +54,28 @@ class Carton:
         return ret
 
     def obj_func(self):
-        row_d = sum(map(lambda l: max(0, sum(l) - self.k), self.grid))
-        col_d = sum(max(0, sum(row[j] for row in self.grid) - self.k) for j in range(self.width))
+        row_score = sum(map(lambda l: max(0, sum(l) - self.k), self.grid))
+        col_score = sum(max(0, sum(row[j] for row in self.grid) - self.k) for j in range(self.width))
 
         grid = array(self.grid)
         flip = flipud(grid)
+
         r1 = range(-(self.width - 1), self.width)
         r2 = range(-(self.height - 1), self.height)
-        di1_d = sum(max(0, grid.trace(d) - min(self.k, len(grid.diagonal(d)))) for d in r1)
-        di2_d = sum(max(0, flip.trace(d) - min(self.k, len(flip.diagonal(d)))) for d in r2)
+
+        dia_score = lambda grid, dia_i: max(0, grid.trace(dia_i) - min(self.k, len(grid.diagonal(dia_i))))
+
+        di1_score = sum(dia_score(grid, d) for d in r1)
+        di2_score = sum(dia_score(flip, d) for d in r2)
 
         perf = self.k * (self.height + self.width + 2 * (self.width + self.height - 1))
-        return (perf - row_d - col_d - di1_d - di2_d) / perf
+        return (perf - row_score - col_score - di1_score - di2_score) / perf
 
     def __str__(self):
         ret = ""
         for j in range(self.height):
             ret += ' '.join("O" if x else "." for x in self.grid[j])
-            ret += ' | ' + str(sum(self.grid[j]))
+            ret += ' | {}'.format(sum(self.grid[j]))
             ret += '\n'
         ret += ' '.join('-' for j in range(self.width))
         ret += '\n'
