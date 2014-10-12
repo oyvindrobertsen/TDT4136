@@ -67,5 +67,5 @@ class Carton:
         return ret
 
 
-annealer = SimAnnealer(100, 1.0, 5, 0.8)
+annealer = SimAnnealer(10, 0.2, 5, 0.75)
 print(annealer.search(Carton(2, ONES)))
