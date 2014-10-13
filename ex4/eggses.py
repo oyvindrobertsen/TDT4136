@@ -30,6 +30,7 @@ MNKs = [(5, 5, 2),
         (8, 8, 1),
         (10, 10, 3)]
 
+
 def grid_dim(grid):
     return len(grid[0]), len(grid)
 
@@ -130,11 +131,10 @@ class Carton:
         return ret
 
 
-annealer = SimAnnealer(10, 0.2, 5, 0.98)
-
 assert Carton(2, SOLUTION552).obj_func() == 1.0
 assert Carton(2, ONES).obj_func() == 0.0
 
+annealer = SimAnnealer(10, 0.2, 5, 0.98)
 carton = Carton(2, random_grid(5, 5, 2))
 print(carton)
 print(annealer.search(carton))

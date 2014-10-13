@@ -3,7 +3,6 @@ from random import random, choice
 
 
 class SimAnnealer(object):
-
     def __init__(self, t_max, delta_t, num_neighbors, f_target):
         self.t_max = t_max
         self.delta_t = delta_t

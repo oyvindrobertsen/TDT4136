@@ -9,3 +9,22 @@ The sum of all penalties is then compared to the absolute worst score achievable
 resulting in a score between 0 (worst) and 1 (optimal solution).
 
 Testing with SOLUTION552 gives a score of 1.
+
+/home/ose/Dropbox/TDT4136/ex4/venv/bin/python3.4 /home/ose/Dropbox/TDT4136/ex4/eggses.py
+. . O O . | 2
+. . O O . | 2
+. . O . O | 2
+. O . O O | 3
+O . . . . | 1
+- - - - -
+1 1 3 3 2
+Score: 0.875
+
+. . O . O | 2
+O . O . . | 2
+O . . O . | 2
+. O . O . | 2
+. O . . O | 2
+- - - - -
+2 2 2 2 2
+Score: 1.0
