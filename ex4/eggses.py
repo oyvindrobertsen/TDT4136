@@ -1,7 +1,7 @@
 from __future__ import division
 from random import randrange
 from copy import deepcopy
-from time import process_time
+#from time import process_time
 
 from numpy.lib.twodim_base import flipud
 from numpy.ma.core import array
@@ -144,7 +144,7 @@ for M, N, K in MNKs:
     carton = Carton(K, random_grid(M, N, K))
     print(carton)
     print()
-    start = process_time()
+    #start = process_time()
     print(annealer.search(carton))
-    end = process_time()
-    print("Time: {}".format(end - start))
+    #end = process_time()
+    #print("Time: {}".format(end - start))
