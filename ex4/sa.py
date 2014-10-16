@@ -23,6 +23,7 @@ class SimAnnealer(object):
 
                 if p_max.obj_func() > best_p.obj_func():
                     best_p = p_max
+                    # print(best_p)
 
                 q = (p_max.obj_func() - fitness) / fitness
                 f = exp(-q / t)
