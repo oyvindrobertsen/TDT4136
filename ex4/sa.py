@@ -1,3 +1,4 @@
+from __future__ import division
 from math import exp
 from random import random, choice
 
@@ -12,28 +13,26 @@ class SimAnnealer(object):
     def search(self, start):
         try:
             p = start
-            best_p = p
             t = self.t_max
-            while p:
+            while t > 0:
                 fitness = p.obj_func()
                 if fitness >= self.f_target:
                     return p
                 neighbors = p.gen_neighbors(self.num_neighbors)
                 p_max = max(neighbors, key=(lambda n: n.obj_func()))
-
-                if p_max.obj_func() > best_p.obj_func():
-                    best_p = p_max
-
                 q = (p_max.obj_func() - fitness) / fitness
                 f = exp(-q / t)
-                p = min(1, f)
+                p_val = min(1, f)
                 x = random()
-                if x > p:
+                if x > p_val:
                     p = p_max
                 else:
                     p = choice(neighbors)
                 t = t - self.delta_t
+            print('No solution with p.obj_func() > f_target was found, last' +
+                  'solution examined was.')
+            return p
         except KeyboardInterrupt:
-            print("KeyboardInterrupt, best p is:")
-            print(best_p)
+            print("KeyboardInterrupt, last p was:")
+            print(p)
             exit(0)

@@ -135,7 +135,7 @@ class Carton:
 assert Carton(2, SOLUTION552).obj_func() == 1.0
 assert Carton(2, ONES).obj_func() == 0.0
 
-annealer = SimAnnealer(20, 0.2, 5, 1.0)
+annealer = SimAnnealer(100, 0.1, 10, 0.97)
 carton = Carton(2, random_grid(10, 10, 2))
 print(carton)
 print(annealer.search(carton))
