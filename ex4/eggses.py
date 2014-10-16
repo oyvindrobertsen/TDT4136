@@ -1,3 +1,4 @@
+from __future__ import division
 from random import randrange
 from copy import deepcopy
 
@@ -134,7 +135,7 @@ class Carton:
 assert Carton(2, SOLUTION552).obj_func() == 1.0
 assert Carton(2, ONES).obj_func() == 0.0
 
-annealer = SimAnnealer(10, 0.2, 5, 0.98)
-carton = Carton(2, random_grid(5, 5, 2))
+annealer = SimAnnealer(20, 0.2, 5, 1.0)
+carton = Carton(2, random_grid(10, 10, 2))
 print(carton)
 print(annealer.search(carton))
