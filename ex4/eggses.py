@@ -1,3 +1,4 @@
+from __future__ import division
 from random import randrange
 from copy import deepcopy
 from time import process_time
@@ -133,7 +134,6 @@ class Carton:
 
 assert Carton(2, SOLUTION552).obj_func() == 1.0
 assert Carton(2, ONES).obj_func() == 0.0
-
 annealer = SimAnnealer(10, 0.2, 5, 0.95)
 
 for M, N, K in MNKs:
