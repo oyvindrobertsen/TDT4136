@@ -1,6 +1,7 @@
 from __future__ import division
 from random import randrange
 from copy import deepcopy
+from time import process_time
 
 from numpy.lib.twodim_base import flipud
 from numpy.ma.core import array
@@ -128,14 +129,22 @@ class Carton:
         ret += ' '.join(str(sum(row[j] for row in self.grid)) for j in range(self.width))
         ret += '\n'
         ret += "Score: {}".format(str(self.obj_func()))
-        ret += '\n'
         return ret
 
 
 assert Carton(2, SOLUTION552).obj_func() == 1.0
 assert Carton(2, ONES).obj_func() == 0.0
+annealer = SimAnnealer(10, 0.2, 5, 0.95)
 
-annealer = SimAnnealer(100, 0.1, 10, 0.97)
-carton = Carton(2, random_grid(10, 10, 2))
-print(carton)
-print(annealer.search(carton))
+for M, N, K in MNKs:
+    print(' '.join('#' for _ in range(10)))
+    print("M, N, K = {}, {}, {}".format(M, N, K))
+    print()
+
+    carton = Carton(K, random_grid(M, N, K))
+    print(carton)
+    print()
+    start = process_time()
+    print(annealer.search(carton))
+    end = process_time()
+    print("Time: {}".format(end - start))
