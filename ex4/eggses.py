@@ -1,7 +1,7 @@
 from __future__ import division
 from random import randrange
 from copy import deepcopy
-#from time import process_time
+from time import process_time
 
 from numpy.lib.twodim_base import flipud
 from numpy.ma.core import array
@@ -9,47 +9,24 @@ from numpy.ma.core import array
 from sa import SimAnnealer
 
 
-SOLUTION552 = [[1, 0, 1, 0, 0],
-               [0, 1, 0, 0, 1],
-               [0, 1, 0, 1, 0],
-               [1, 0, 0, 0, 1],
-               [0, 0, 1, 1, 0]]
-
-ONES = [[1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1]]
-
-ZEROES = [[0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0]]
-
-MNKs = [(5, 5, 2),
-        (6, 6, 2),
-        (8, 8, 1),
-        (10, 10, 3)]
-
-
-def grid_dim(grid):
+# static helper functions
+def grid_dimensions(grid):
     return len(grid[0]), len(grid)
 
 
-def random_coord(M, N):
+def random_coordinate(M, N):
     return randrange(M), randrange(N)
 
 
-def new_grid(M, N, val=0):
-    return [[val for _ in range(M)] for _ in range(N)]
+def new_grid(width, height, initial_value=0):
+    return [[initial_value for _ in range(width)] for _ in range(height)]
 
 
-def random_grid(M, N, K):
-    grid = new_grid(M, N, 0)
-    ts = K * max(M, N)
+def random_grid(width, height, ones):
+    grid = new_grid(width, height, 0)
+    ts = ones * min(width, height)
     while ts > 0:
-        x, y = random_coord(M, N)
+        x, y = random_coordinate(width, height)
 
         if grid[y][x] == 1:
             continue
@@ -61,7 +38,7 @@ def random_grid(M, N, K):
 
 
 def grid_score(k, grid):
-    width, height = grid_dim(grid)
+    width, height = grid_dimensions(grid)
 
     row_penalties = list(max(0, sum(row) - k) for row in grid)
     col_penalties = list(max(0, sum(row[j] for row in grid) - k) for j in range(width))
@@ -81,13 +58,13 @@ def grid_score(k, grid):
 
 
 def random_swap(grid):
-    width, height = grid_dim(grid)
+    width, height = grid_dimensions(grid)
 
-    x1, y1 = random_coord(width, height)
-    x2, y2 = random_coord(width, height)
+    x1, y1 = random_coordinate(width, height)
+    x2, y2 = random_coordinate(width, height)
 
     while (x1 == x2 and y1 == y2) or grid[y1][x1] == grid[y2][x2]:
-        x2, y2 = random_coord(width, height)
+        x2, y2 = random_coordinate(width, height)
 
     grid[y1][x1], grid[y2][x2] = grid[y2][x2], grid[y1][x1]
 
@@ -98,7 +75,7 @@ class Carton:
     def __init__(self, k, grid):
         self.grid = deepcopy(grid)
         self.k = k
-        self.width, self.height = grid_dim(self.grid)
+        self.width, self.height = grid_dimensions(self.grid)
 
     @property
     def worst_score(self):
@@ -119,32 +96,47 @@ class Carton:
         return 1 - (grid_score(self.k, self.grid) / self.worst_score)
 
     def __str__(self):
-        ret = ""
+        '''
+        Display grid state with row and column sums
+        '''
+        r = ""
         for j in range(self.height):
-            ret += ' '.join("O" if x else "." for x in self.grid[j])
-            ret += ' | {}'.format(sum(self.grid[j]))
-            ret += '\n'
-        ret += ' '.join('-' for j in range(self.width))
-        ret += '\n'
-        ret += ' '.join(str(sum(row[j] for row in self.grid)) for j in range(self.width))
-        ret += '\n'
-        ret += "Score: {}".format(str(self.obj_func()))
-        return ret
+            r += ' '.join("O" if x else "." for x in self.grid[j])
+            r += ' | {}'.format(sum(self.grid[j]))
+            r += '\n'
+        r += ' '.join('-' for j in range(self.width))
+        r += '\n'
+        r += ' '.join(str(sum(row[j] for row in self.grid)) for j in range(self.width))
+        r += '\n'
+        r += "Score: {}".format(str(self.obj_func()))
+        return r
 
 
-assert Carton(2, SOLUTION552).obj_func() == 1.0
+# obj_func test cases
+SOLUTION_552 = [[1, 0, 1, 0, 0], [0, 1, 0, 0, 1], [0, 1, 0, 1, 0], [1, 0, 0, 0, 1], [0, 0, 1, 1, 0]]
+assert Carton(2, SOLUTION_552).obj_func() == 1.0
+
+ONES = [[1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]]
 assert Carton(2, ONES).obj_func() == 0.0
-annealer = SimAnnealer(10, 0.2, 5, 0.95)
 
-for M, N, K in MNKs:
+
+# use SA for egg probmles of different M, N, K
+CASES = (
+    (5, 5, 2),
+    (6, 6, 2),
+    (8, 8, 1),
+    (10, 10, 3),
+)
+annealer = SimAnnealer(10, 0.1, 5, 1.0)
+for M, N, K in CASES:
     print(' '.join('#' for _ in range(10)))
-    print("M, N, K = {}, {}, {}".format(M, N, K))
-    print()
+    # print("M, N, K = {}, {}, {}".format(M, N, K))
+    # print()
 
     carton = Carton(K, random_grid(M, N, K))
     print(carton)
     print()
-    #start = process_time()
-    print(annealer.search(carton))
-    #end = process_time()
-    #print("Time: {}".format(end - start))
+    start = process_time()
+    annealer.search(carton)
+    end = process_time()
+    # print("Time: {}".format(end - start))
