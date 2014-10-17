@@ -1,25 +1,35 @@
 \begin{figure}[h!]
+\begin{multicols}{2}
     \begin{verbatim}
-    O . . O . . | 2
-    . . . O . O | 2
-    O . . O . O | 3
-    . . . . . . | 0
-    . O O . O . | 3
-    O . . . O . | 2
-    - - - - - -
-    3 1 1 3 2 2
-    Score: 0.9375
-
-    No solution with p.obj_func() > f_target was found, return last examined board.
-    . . . O . O | 2
-    . . O O O O | 4
-    . . . O . . | 1
-    . O . . O . | 2
-    . . . . . O | 1
-    . . . O . O | 2
-    - - - - - -
-    0 1 1 4 2 4
-    Score: 0.8875
+    . . . . . . . . | 0
+    . . . . . . O . | 1
+    . . O . . . . . | 1
+    . . . O . . . . | 1
+    . . . . . . O . | 1
+    . . . . . . O . | 1
+    O . . . . . . . | 1
+    . . O . . O . . | 2
+    - - - - - - - -
+    1 0 2 1 0 1 3 0
+    Score: 0.9714285714285714
     \end{verbatim}
-\caption{$M, N, K = 6, 6, 2$}
+    \columnbreak
+    \begin{verbatim}
+    O . . . . . . . | 1
+    . . . . . O . . | 1
+    . . . . . . . . | 0
+    . O . . . . . . | 1
+    . . . . . O O O | 3
+    . . O . . . . . | 1
+    . . O . . . . . | 1
+    . . . . . . . . | 0
+    - - - - - - - -
+    1 1 2 0 0 2 1 1
+    Score: 0.9809523809523809
+    \end{verbatim}
+    \end{multicols}
+\caption{$M, N, K = 8, 8, 1$\\
+Initial state left, last state right.}
 \end{figure}
+Even with a very strong start state,
+in this case the temperature reached 0 and the program stopped before an optimal solution was found.
