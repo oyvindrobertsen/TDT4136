@@ -127,7 +127,7 @@ CASES = (
     (8, 8, 1),
     (10, 10, 3),
 )
-annealer = SimAnnealer(10, 0.1, 5, 1.0)
+annealer = SimAnnealer(1, 0.001, 5, 0.98)
 for M, N, K in CASES:
     print(' '.join('#' for _ in range(10)))
     # print("M, N, K = {}, {}, {}".format(M, N, K))
