@@ -113,19 +113,18 @@ class CSP:
         iterations of the loop.
         """
         print assignment
-        if not all(map(lambda l: len(l) == 1, assignment.itervalues())):
-            # All assignment lists have lenght = 1, we are done
+        if all(map(lambda l: len(l) == 1, assignment.itervalues())):
             print 'complete'
+            # All assignment lists have lenght = 1, we are done
             return assignment
         var = self.select_unassigned_variable(assignment)
-        print var
         for value in assignment[var]:
             assignment_copy = copy.deepcopy(assignment)
             assignment_copy[var] = [value]
-            inferences = self.inference(assignment_copy, False)
-            if inferences:
-                if self.backtrack(assignment_copy):
-                    return assignment_copy
+            if self.inference(assignment_copy, self.get_all_neighboring_arcs(var)):
+                result = self.backtrack(assignment_copy)
+                if result:
+                    return result
         return False
 
     def select_unassigned_variable(self, assignment):
@@ -134,7 +133,7 @@ class CSP:
         in 'assignment' that have not yet been decided, i.e. whose list
         of legal values has a length greater than one.
         """
-        return choice(filter(lambda k, v: len(v) > 1, assignment.iteritems()))
+        return choice(filter(lambda (k, v): len(v) > 1, assignment.iteritems()))[0]
 
     def inference(self, assignment, queue):
         """The function 'AC-3' from the pseudocode in the textbook.
@@ -142,11 +141,10 @@ class CSP:
         the lists of legal values for each undecided variable. 'queue'
         is the initial queue of arcs that should be visited.
         """
-        print queue
         while queue:
             x_i, x_j = queue.pop(0)
             if self.revise(assignment, x_i, x_j):
-                if not len(self.domains):
+                if len(assignment[x_i]) == 0:
                     return False
                 neighbors = self.get_all_neighboring_arcs(x_i)
                 neighbors.remove((x_j, x_i))
@@ -236,4 +234,4 @@ def print_sudoku_solution(solution):
         if row == 2 or row == 5:
             print '------+-------+------'
 
-print(create_map_coloring_csp().backtracking_search())
+print_sudoku_solution(create_sudoku_csp('veryhard.txt').backtracking_search())
