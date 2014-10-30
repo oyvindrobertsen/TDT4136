@@ -3,6 +3,7 @@
 import copy
 import itertools
 
+
 class CSP:
     def __init__(self):
         # self.variables is a list of the variable names in the CSP
@@ -127,8 +128,14 @@ class CSP:
         the lists of legal values for each undecided variable. 'queue'
         is the initial queue of arcs that should be visited.
         """
-        # TODO: IMPLEMENT THIS
-        pass
+        while queue:
+            x_i, x_j = queue.pop(0)
+            if self.revise(assignment, x_j, x_j):
+                if len(self.domains):
+                    return False
+                for neighbor in self.get_all_neighboring_arcs(x_i).remove(x_j):
+                    queue.append((x_j, neighbor))
+        return True
 
     def revise(self, assignment, i, j):
         """The function 'Revise' from the pseudocode in the textbook.
@@ -203,3 +210,5 @@ def print_sudoku_solution(solution):
         print
         if row == 2 or row == 5:
             print '------+-------+------'
+
+print(create_map_coloring_csp().backtracking_search())
