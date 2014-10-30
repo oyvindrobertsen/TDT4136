@@ -3,6 +3,8 @@
 import copy
 import itertools
 
+from random import choice
+
 
 class CSP:
     def __init__(self):
@@ -110,8 +112,21 @@ class CSP:
         assignments and inferences that took place in previous
         iterations of the loop.
         """
-        # TODO: IMPLEMENT THIS
-        pass
+        print assignment
+        if not all(map(lambda l: len(l) == 1, assignment.itervalues())):
+            # All assignment lists have lenght = 1, we are done
+            print 'complete'
+            return assignment
+        var = self.select_unassigned_variable(assignment)
+        print var
+        for value in assignment[var]:
+            assignment_copy = copy.deepcopy(assignment)
+            assignment_copy[var] = [value]
+            inferences = self.inference(assignment_copy, False)
+            if inferences:
+                if self.backtrack(assignment_copy):
+                    return assignment_copy
+        return False
 
     def select_unassigned_variable(self, assignment):
         """The function 'Select-Unassigned-Variable' from the pseudocode
@@ -119,8 +134,7 @@ class CSP:
         in 'assignment' that have not yet been decided, i.e. whose list
         of legal values has a length greater than one.
         """
-        # TODO: IMPLEMENT THIS
-        pass
+        return choice(filter(lambda k, v: len(v) > 1, assignment.iteritems()))
 
     def inference(self, assignment, queue):
         """The function 'AC-3' from the pseudocode in the textbook.
@@ -128,13 +142,16 @@ class CSP:
         the lists of legal values for each undecided variable. 'queue'
         is the initial queue of arcs that should be visited.
         """
+        print queue
         while queue:
             x_i, x_j = queue.pop(0)
-            if self.revise(assignment, x_j, x_j):
-                if len(self.domains):
+            if self.revise(assignment, x_i, x_j):
+                if not len(self.domains):
                     return False
-                for neighbor in self.get_all_neighboring_arcs(x_i).remove(x_j):
-                    queue.append((x_j, neighbor))
+                neighbors = self.get_all_neighboring_arcs(x_i)
+                neighbors.remove((x_j, x_i))
+                for neighbor in neighbors:
+                    queue.append(neighbor)
         return True
 
     def revise(self, assignment, i, j):
@@ -146,8 +163,16 @@ class CSP:
         between i and j, the value should be deleted from i's list of
         legal values in 'assignment'.
         """
-        # TODO: IMPLEMENT THIS
-        pass
+        revised = False
+        for x in assignment[i]:
+            satisfiable = False
+            for y in assignment[j]:
+                if (x, y) in self.constraints[i][j]:
+                    satisfiable = True
+            if not satisfiable:
+                assignment[i].remove(x)
+                revised = True
+        return revised
 
 
 def create_map_coloring_csp():
@@ -183,9 +208,9 @@ def create_sudoku_csp(filename):
                 csp.add_variable('%d-%d' % (row, col), [ board[row][col] ])
 
     for row in range(9):
-        csp.add_all_different_constraint([ '%d-%d' % (row, col) for col in range(9) ])
+        csp.add_all_different_constraint([ '%d-%d' % (row, col) for col in range(9)])
     for col in range(9):
-        csp.add_all_different_constraint([ '%d-%d' % (row, col) for row in range(9) ])
+        csp.add_all_different_constraint([ '%d-%d' % (row, col) for row in range(9)])
     for box_row in range(3):
         for box_col in range(3):
             cells = []
