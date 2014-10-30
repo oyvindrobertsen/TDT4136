@@ -112,9 +112,7 @@ class CSP:
         assignments and inferences that took place in previous
         iterations of the loop.
         """
-        print assignment
         if all(map(lambda l: len(l) == 1, assignment.itervalues())):
-            print 'complete'
             # All assignment lists have lenght = 1, we are done
             return assignment
         var = self.select_unassigned_variable(assignment)
