@@ -18,6 +18,9 @@ class CSP:
         # the variable pair (i, j)
         self.constraints = {}
 
+        self.backtrack_counter = 0
+        self.failure_counter = 0
+
     def add_variable(self, name, domain):
         """Add a new variable to the CSP. 'name' is the variable name
         and 'domain' is a list of the legal values for the variable.
@@ -112,6 +115,7 @@ class CSP:
         assignments and inferences that took place in previous
         iterations of the loop.
         """
+        self.backtrack_counter += 1
         if all(map(lambda l: len(l) == 1, assignment.itervalues())):
             # All assignment lists have lenght = 1, we are done
             return assignment
@@ -123,6 +127,7 @@ class CSP:
                 result = self.backtrack(assignment_copy)
                 if result:
                     return result
+        self.failure_counter += 1
         return False
 
     def select_unassigned_variable(self, assignment):
@@ -145,7 +150,6 @@ class CSP:
                 if len(assignment[x_i]) == 0:
                     return False
                 neighbors = self.get_all_neighboring_arcs(x_i)
-                neighbors.remove((x_j, x_i))
                 for neighbor in neighbors:
                     queue.append(neighbor)
         return True
@@ -165,6 +169,7 @@ class CSP:
             for y in assignment[j]:
                 if (x, y) in self.constraints[i][j]:
                     satisfiable = True
+                    break
             if not satisfiable:
                 assignment[i].remove(x)
                 revised = True
@@ -232,4 +237,9 @@ def print_sudoku_solution(solution):
         if row == 2 or row == 5:
             print '------+-------+------'
 
-print_sudoku_solution(create_sudoku_csp('veryhard.txt').backtracking_search())
+path = 'veryhard.txt'
+csp = create_sudoku_csp(path)
+print path
+print_sudoku_solution(csp.backtracking_search())
+print 'Backtrack calls: ', csp.backtrack_counter
+print 'Backtrack failures: ', csp.failure_counter
